@@ -2,18 +2,23 @@
 <html>
 <head>
   <title>WaywardSite</title>
+  <!-- Link all necessary Javascripts and Stylesheets and meta tags -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  <!-- The Navigation Bar using Twitter Bootstrap -->
 <div class ="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <a class="brand" href="/">Wayward Star</a>
       <ul class="nav">
+        <!-- This will link to all of the posts using a Rails path -->
         <li><%= link_to "All Posts", statuses_path %></li>
       </ul>
+      <!-- This will be to either give the option to log in or register and if logged in. To go to the profile page or log out -->
       <ul class="nav pull-right">
         <% if user_signed_in? %>
         <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
@@ -27,9 +32,13 @@
   </div>
     
 </div>
+
 <div class="container">
+  <!-- These are 2 tags required by Devise that we will address at a later date -->
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+  
+  <!--This is the actual page content -->
 <%= yield %>
 </div>
 

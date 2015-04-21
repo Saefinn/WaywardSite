@@ -1,14 +1,17 @@
+<!-- This page is to 'show' a post -->
 <p id="notice"><%= notice %></p>
 
 <p>
+  <!-- Show the user name of the post maker. -->
   <b>Name:</b>
   <%= @status.user.full_name %>
 </p>
 
 <p>
+  <!-- Show the post itself -->
   <strong>Content:</strong>
   <%= @status.content %>
 </p>
-
+<!-- Link in the paths to either 'edit' the content or just return to the main page -->
 <%= link_to 'Edit', edit_status_path(@status) %> |
 <%= link_to 'Back', statuses_path %>
