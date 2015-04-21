@@ -22,18 +22,6 @@ class UserTest < ActiveSupport::TestCase
     assert !user.errors[:profile_name].empty?
   end
   
-  test "a user should have a unique profile name" do
-    user = User.new
-    user.profile_name = 'saefinn'
-    user.email = "bryn.price@live.co.uk"
-    user.first_name = 'bryn'
-    user.last_name = 'price'
-    user.password = "password"
-    user.password_confirmation = "password"
-    assert !user.save
-    puts user.errors.inspect
-    assert !user.errors[:profile_name].empty?
-  end
   
   test "a user should have a profile name without spaces" do
     user = user.new

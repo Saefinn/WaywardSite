@@ -35,9 +35,16 @@
 
 <div class="container">
   <!-- These are 2 tags required by Devise that we will address at a later date -->
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  
+    
+    <% flash.each do |type, message| %>
+      <div class="alert <%= flash_class type %>">
+        <button class="close" data-dismiss="alert">x</button>
+        <%= message %>
+      </div>
+    <% end %>
+    
+    
+    
   <!--This is the actual page content -->
 <%= yield %>
 </div>
