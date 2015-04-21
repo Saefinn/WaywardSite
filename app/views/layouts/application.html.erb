@@ -16,16 +16,16 @@
       <a class="brand" href="/">Wayward Star</a>
       <ul class="nav">
         <!-- This will link to all of the posts using a Rails path -->
-        <li><%= link_to "All Posts", statuses_path %></li>
+        <li><%= link_to "All Posts",feed_path %></li>
       </ul>
       <!-- This will be to either give the option to log in or register and if logged in. To go to the profile page or log out -->
       <ul class="nav pull-right">
         <% if user_signed_in? %>
         <li><%= link_to current_user.full_name, edit_user_registration_path %></li>
-        <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %> </li>
+        <li><%= link_to "Log Out", logout_path %> </li>
         <% else %>
-          <li><%= link_to "Register", new_user_registration_path %></li>
-          <li><%= link_to "Log in", new_user_session_path %></li>
+          <li><%= link_to "Register", register_path %></li>
+          <li><%= link_to "Log in", login_path %></li>
         <% end %>
       </ul>
     </div>
