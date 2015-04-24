@@ -1,9 +1,9 @@
 <div class="page-header">
-  <h1>Posts</h1>
+  <h1>Journals</h1>
 </div>
 
 <!-- Button for creating a new post. Using Twitter boot strap -->
-<%= link_to "Make a new Post", new_status_path, class: "btn" %>
+<%= link_to "Make new journal entry", new_status_path, class: "btn" %>
 
 <!-- An 'each' loop taking each item in 'statuses' and assigning it to the value 'status' for use in each iteration -->
 <% @statuses.each do |status| %>
@@ -17,7 +17,7 @@
     
   
   <!-- Display the user's name -->
-  <strong><%= status.user.full_name %></strong>
+  <strong><a href=<%=status.user.profile_name %>> <%= status.user.profile_name %></a></strong>
   <!-- Display the corresponding post -->
   <p><%= status.content %></p>
   <!-- Display how long ago it was posted -->
