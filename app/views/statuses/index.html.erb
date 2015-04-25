@@ -19,10 +19,10 @@
   <!-- Display the user's name -->
   <strong><a href=<%=status.user.profile_name %>> <%= status.user.profile_name %></a></strong>
   <!-- Display the corresponding post -->
-  <p><%= status.content %></p>
+  <p><%= link_to status.title, status %></p>
   <!-- Display how long ago it was posted -->
   <div class="meta">
-    <%= link_to time_ago_in_words(status.created_at) + " ago", status %>
+    <%= time_ago_in_words(status.created_at) + " ago" %>
     <!-- Display options for editing and deleting these. Whether they display or not relies on CSS styling and Javascript (see: "statuses.coffee") -->
     <span class="admin">
        | <%= link_to "Edit", edit_status_path(status) %> |

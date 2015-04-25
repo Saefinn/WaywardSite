@@ -21,3 +21,9 @@ body {
 .alert {
     margin-top: 10px;
 }
+
+pre {
+    background: none;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
