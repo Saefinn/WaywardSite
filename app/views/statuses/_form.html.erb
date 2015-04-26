@@ -11,9 +11,10 @@
     </div>
   <% end %>
 
-    
-   <%= f.input :user_id, collection: User.all, label_method: :profile_name %>
+    <h4>Entry for <%=  current_user.profile_name%></h4>
+   
    <%= f.input :title %>
+   </br>
    <%= f.input :content %>
    
    

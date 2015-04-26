@@ -16,5 +16,6 @@
 
 <!-- Link in the paths to either 'edit' the content or just return to the main page -->
 <% if current_user.present? %>
-<%= link_to 'Edit', edit_status_path(@status) %><% end %> |
+  <% if @status.user.profile_name == current_user.profile_name %>
+<%= link_to 'Edit', edit_status_path(@status) %> |<% end %><% end %>
 <%= link_to 'Back', statuses_path %>
