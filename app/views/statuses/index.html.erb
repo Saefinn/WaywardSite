@@ -39,6 +39,19 @@
        
       
       <% end %>
+    
+      <% if current_user.profile_name == "admin" %>
+        <span class="admin">
+          
+          | <%= link_to "Edit", edit_status_path(status) %> |
+          <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"} %>
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
     <% end %>
   </div>
 </div>
