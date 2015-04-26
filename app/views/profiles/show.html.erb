@@ -8,9 +8,8 @@
   <h3>Journal Entries</h3>
   <% if @statuses %>
     <% @statuses.each do |status| %>
-    <div class="well">
-      <%= status.content %>
-      <hr />
+    <div class="panel panel-default">
+      <strong><h4><%= link_to status.title, status %></h4></strong>
       <%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago
       
     </div>

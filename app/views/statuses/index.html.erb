@@ -16,18 +16,23 @@
   <div class="span7"> 
     
   
-  <!-- Display the user's name -->
-  <strong><a href=<%=status.user.profile_name %>> <%= status.user.profile_name %></a></strong>
-  <!-- Display the corresponding post -->
-  <p><%= link_to status.title, status %></p>
+  <!-- Display the journal title name -->
+  
+  <strong><h4><%= link_to status.title, status %></h4></strong>
+  <!-- Display the author name -->
+  <a href=<%=status.user.profile_name %>> By <%= status.user.profile_name %></a>
+  
+  
   <!-- Display how long ago it was posted -->
   <div class="meta">
     <%= time_ago_in_words(status.created_at) + " ago" %>
     <!-- Display options for editing and deleting these. Whether they display or not relies on CSS styling and Javascript (see: "statuses.coffee") -->
+    <% if current_user.present? %>
     <span class="admin">
        | <%= link_to "Edit", edit_status_path(status) %> |
       <%= link_to "Delete", status, method: :delete, data: { confirm: "Are you sure you want to delete this status?"} %>
     </span>
+    <% end %>
   </div>
 </div>
   </div>

@@ -11,9 +11,10 @@
   <!-- Show the post itself -->
   <h3><%= @status.title %></h3>
   <h4>By <%= @status.user.profile_name %></h4>
-  <pre><%= @status.content %></pre>
+  <div class="my-pre"><%= @status.content %></div
 </p>
 
 <!-- Link in the paths to either 'edit' the content or just return to the main page -->
-<%= link_to 'Edit', edit_status_path(@status) %> |
+<% if current_user.present? %>
+<%= link_to 'Edit', edit_status_path(@status) %><% end %> |
 <%= link_to 'Back', statuses_path %>

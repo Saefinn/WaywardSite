@@ -15,6 +15,11 @@
  */
 body {
     padding-top: 40px;
+    background-image: url("wssitebg.jpg");
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: 3440x 100%;
+    background-position: center;
 }
 
 
@@ -22,8 +27,20 @@ body {
     margin-top: 10px;
 }
 
-pre {
+.my-pre {
     background: none;
     border: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre-wrap;
+    
+    
+}
+
+.main-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px 15px 15px;
+    background-color: rgba(255,255,255,0.85);
+    width: 100%;
+    border-radius: 5px;
 }
