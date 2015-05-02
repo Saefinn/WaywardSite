@@ -21,6 +21,11 @@ class StatusesController < ApplicationController
 
   # GET /statuses/1/edit
   def edit
+    if @status.user_id != current_user.id      
+        render file: 'public/denied', status: 404, formats: [:html]
+    end
+  
+    
   end
 
   # POST /statuses
