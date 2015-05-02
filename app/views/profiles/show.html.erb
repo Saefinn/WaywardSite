@@ -1,7 +1,7 @@
 <div class="page-header">
-  <h1><%= @user.full_name %></h1>
+  <h1><%= @user.profile_name %></h1>
   <h3>About Me</h3>
-  <p><%= @user.description %></p>
+  <p class="my-pre"><%= @user.description %></p>
   <h3>Characters</h3>
   <p><%= @user.character_names %></p>
   
@@ -9,8 +9,8 @@
   <% if @statuses %>
     <% @statuses.each do |status| %>
     <div class="panel panel-default">
-      <strong><h4><%= link_to status.title, status %></h4></strong>
-      <%= link_to time_ago_in_words(status.created_at), status_path(status) %> ago
+      <strong><h4><%= link_to status.title, "journal/#{status.id}" %></h4></strong>
+      <%=time_ago_in_words(status.created_at)%> ago
       
     </div>
     <% end %>

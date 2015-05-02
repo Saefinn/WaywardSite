@@ -15,6 +15,13 @@ Rails.application.routes.draw do
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
   
+  
+  get 'journal', to: 'statuses#index', as: :journal
+  get 'journal/:id/edit', to: 'statuses#edit', as: :journal_edit
+  get 'journal/new', to: 'statuses#new', as: :journal_new
+  
+  get 'journal/:id', to: 'statuses#show'
+  
   get 'user_list', to: 'show_users#show', as: :user_list
   
   get  '/:id', to: 'profiles#show'

@@ -13,12 +13,12 @@
 
     <h4>Entry for <%=  current_user.profile_name%></h4>
    
-   <%= f.input :title %>
+   <h4>Title </h4><%= f.input :title %>
+   
+   <h4>Journal Entry</h4><%= f.input :content %>
+   
+   
    </br>
-   <%= f.input :content %>
-   
-   
-   <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+    <%= f.submit "Post" %>
+  
 <% end %>

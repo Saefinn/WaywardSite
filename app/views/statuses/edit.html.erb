@@ -2,5 +2,5 @@
 <!-- Render the form for editing the status -->
 <%= render 'form' %>
 
-<%= link_to 'Show', @status %> |
-<%= link_to 'Back', statuses_path %>
+<%= link_to 'Show', "../#{@status.id}" %> |
+<%= link_to 'Back', journal_path %>
