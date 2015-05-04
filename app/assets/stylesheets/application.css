@@ -62,9 +62,13 @@ textarea {
 
 
 .text label{
-    display: none;
+    /*display: none; */
 }
 
 .string label{
-    display: none;
+    /* display: none; */
+}
+
+.indent {
+    margin-left: 20px;
 }

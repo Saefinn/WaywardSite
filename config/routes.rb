@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :characters
   get 'show_users/show'
 
   get 'profiles/show'

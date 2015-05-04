@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Characters</h1>
+
+
+    <% @characters.each do |character| %>
+      
+        <h4>
+          <%= link_to character.first_name + " " + character.last_name, character %>
+        
+        </h4>
+        
+         
+        <%= link_to 'Edit', edit_character_path(character) %> |
+        <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <hr>
+      
+    <% end %>
+
+
+<br>
+
+<%= link_to 'New Character', new_character_path %>

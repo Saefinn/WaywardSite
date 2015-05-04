@@ -1,0 +1,77 @@
+<p id="notice"><%= notice %></p>
+
+
+  <h2><%= @character.first_name + " " + @character.last_name %></h2>
+
+
+
+<h3>Information</h3>
+<p>
+  <strong>Nick name:</strong>
+  <%= @character.nick_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @character.title %>
+</p>
+
+<p>
+  <strong>Traits:</strong>
+  <%= @character.traits %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @character.skills %>
+</p>
+
+<h3>Attributes</h3>
+<div class="indent">
+<p>
+  <strong>Strength:</strong>
+  <%= @character.strength %>
+</p>
+
+<p>
+  <strong>Vitality:</strong>
+  <%= @character.vitality %>
+</p>
+
+<p>
+  <strong>Agility:</strong>
+  <%= @character.agility %>
+</p>
+
+<p>
+  <strong>Dexterity:</strong>
+  <%= @character.dexterity %>
+</p>
+
+<p>
+  <strong>Intelligence:</strong>
+  <%= @character.intelligence %>
+</p>
+
+<p>
+  <strong>Mind:</strong>
+  <%= @character.mind %>
+</p>
+</div>
+
+
+  <h3>Description:</h3>
+  <p><div class="my-pre"><%= @character.description %></div></p>
+
+
+
+
+
+  <h3>History:</h3>
+  <p><div class="my-pre"><%= @character.history %></div></p>
+
+
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

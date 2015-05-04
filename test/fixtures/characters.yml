@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  nick_name: MyString
+  title: MyString
+  description: MyText
+  traits: MyString
+  skills: MyString
+  history: MyText
+  strength: MyString
+  vitality: MyString
+  agility: MyString
+  dexterity: MyString
+  intelligence: MyString
+  mind: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  nick_name: MyString
+  title: MyString
+  description: MyText
+  traits: MyString
+  skills: MyString
+  history: MyText
+  strength: MyString
+  vitality: MyString
+  agility: MyString
+  dexterity: MyString
+  intelligence: MyString
+  mind: MyString

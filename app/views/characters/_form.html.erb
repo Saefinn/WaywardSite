@@ -1,0 +1,39 @@
+<%= simple_form_for(@character) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :first_name %>
+
+    <%= f.input :last_name %>
+
+    <%= f.input :nick_name %>
+
+    <%= f.input :title %>
+
+    <%= f.input :description %>
+
+    <%= f.input :traits%>
+
+    <%= f.input :skills %>
+
+    <%= f.input :history %>
+
+    <%= f.input :strength, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+    <%= f.input :vitality, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+    <%= f.input :agility, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+    <%= f.input :dexterity, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+    <%= f.input :intelligence, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+    <%= f.input :mind, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
