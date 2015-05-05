@@ -11,7 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150425200527) do
+ActiveRecord::Schema.define(version: 20150505201136) do
+
+  create_table "characters", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "nick_name"
+    t.string   "title"
+    t.text     "description"
+    t.string   "traits"
+    t.string   "skills"
+    t.text     "history"
+    t.string   "strength"
+    t.string   "vitality"
+    t.string   "agility"
+    t.string   "dexterity"
+    t.string   "intelligence"
+    t.string   "mind"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "user_id"
+  end
+
+  add_index "characters", ["user_id"], name: "index_characters_on_user_id"
 
   create_table "statuses", force: :cascade do |t|
     t.text     "content"

@@ -72,6 +72,10 @@
 
 
 
+<% if current_user.present? %>
+    <% if @character.user.profile_name == current_user.profile_name %>
+        <%= link_to 'Edit', edit_character_path(@character) %> |
+    <% end %>
+<% end %>
 
-<%= link_to 'Edit', edit_character_path(@character) %> |
 <%= link_to 'Back', characters_path %>

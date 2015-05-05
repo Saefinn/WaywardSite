@@ -1,7 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Characters</h1>
-
+<h1>Characters</h1>
+    <% if current_user.present? %>
+        <%= link_to "New Character", new_character_path %>
+    <% end %>
 
     <% @characters.each do |character| %>
       
@@ -9,15 +11,28 @@
           <%= link_to character.first_name + " " + character.last_name, character %>
         
         </h4>
-        
-         
-        <%= link_to 'Edit', edit_character_path(character) %> |
-        <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <p>
+          <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
+        </p>
+
+        <% if current_user.present? %>
+            <% if character.user.profile_name == current_user.profile_name %>
+                <span class="admin">
+                    <%= link_to 'Edit', edit_character_path(character) %> |
+                    <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </span>
+            <% end %>
+        <% end %>
+
+
+
         <hr>
-      
+
+
+
     <% end %>
 
 
 <br>
 
-<%= link_to 'New Character', new_character_path %>
+

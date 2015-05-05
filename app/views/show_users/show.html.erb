@@ -2,4 +2,8 @@
   <h1>Members</h1>
 </div>
 
-<h5><% @users.each do |user| %><a href=<%=user.profile_name %>> <%=user.profile_name %></a> | <% end %></h5>
+<% @users.each do |user| %>
+    <h4><a href=<%=user.profile_name %>> <%=user.profile_name %></a></h4>
+    <div class="text-summary"><p><%=user.description %></p></div>
+    <hr>
+<% end %>

@@ -4,7 +4,18 @@
   <p class="my-pre"><%= @user.description %></p>
   <h3>Characters</h3>
   <p><%= @user.character_names %></p>
-  
+
+
+  <h3>Characters</h3>
+  <% if @characters %>
+      <% @characters.each do |character| %>
+          <div class="panel panel-default">
+            <h4><%= link_to character.full_name, character_path(character) %></h4>
+
+          </div>
+      <% end %>
+  <% end %>
+
   <h3>Journal Entries</h3>
   <% if @statuses %>
     <% @statuses.each do |status| %>
@@ -15,4 +26,8 @@
     </div>
     <% end %>
   <% end %>
+
+
+
+
 </div>

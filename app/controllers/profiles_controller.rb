@@ -3,6 +3,7 @@ class ProfilesController < ApplicationController
     @user = User.find_by_profile_name(params[:id])
     if @user
       @statuses = @user.statuses.all
+      @characters = @user.characters.all
       render action: :show
         #code
       else

@@ -1,6 +1,8 @@
 class CharactersController < ApplicationController
   before_action :set_character, only: [:show, :edit, :update, :destroy]
 
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :update]
+
   # GET /characters
   # GET /characters.json
   def index
@@ -14,18 +16,22 @@ class CharactersController < ApplicationController
 
   # GET /characters/new
   def new
+
     @character = Character.new
   end
 
   # GET /characters/1/edit
   def edit
+    if @character.user_id != current_user.id
+      render file: 'public/denied', status: 404, formats: [:html]
+    end
   end
 
   # POST /characters
   # POST /characters.json
   def create
     @character = Character.new(character_params)
-
+    @character.user_id = current_user.id
     respond_to do |format|
       if @character.save
         format.html { redirect_to @character, notice: 'Character was successfully created.' }
@@ -40,6 +46,7 @@ class CharactersController < ApplicationController
   # PATCH/PUT /characters/1
   # PATCH/PUT /characters/1.json
   def update
+    @character.user_id = current_user.id
     respond_to do |format|
       if @character.update(character_params)
         format.html { redirect_to @character, notice: 'Character was successfully updated.' }

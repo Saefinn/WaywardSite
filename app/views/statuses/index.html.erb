@@ -3,7 +3,9 @@
 </div>
 
 <!-- Button for creating a new post. Using Twitter boot strap -->
-<%= link_to "Make new journal entry", journal_new_path, class: "btn" %>
+<% if current_user.present? %>
+    <%= link_to "Make new journal entry", journal_new_path, class: "btn" %>
+<% end %>
 
 <!-- An 'each' loop taking each item in 'statuses' and assigning it to the value 'status' for use in each iteration -->
 <% @statuses.each do |status| %>

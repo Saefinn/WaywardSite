@@ -72,3 +72,10 @@ textarea {
 .indent {
     margin-left: 20px;
 }
+
+.text-summary {
+
+    height: 60px;
+    overflow: hidden;
+
+}
