@@ -78,4 +78,6 @@
     <% end %>
 <% end %>
 
+<%= link_to 'Delete', @character, method: :delete, data: { confirm: 'Are you sure?' } %>
+
 <%= link_to 'Back', characters_path %>
