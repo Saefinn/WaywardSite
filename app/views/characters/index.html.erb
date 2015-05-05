@@ -9,7 +9,7 @@
       
         <h4>
           <%= link_to character.first_name + " " + character.last_name, character %>
-        
+          <!--
         </h4>
         <p>
           <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
@@ -19,12 +19,11 @@
             <% if character.user.profile_name == current_user.profile_name %>
                 <span class="admin">
                     <%= link_to 'Edit', edit_character_path(character) %> |
-                    <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
+
                 </span>
             <% end %>
-        <% end %>
-
-
+        <% end %> -->
+    <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
 
         <hr>
 
