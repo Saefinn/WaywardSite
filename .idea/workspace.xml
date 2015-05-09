@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19caf347-ec02-4db1-8b8a-5ff873126037" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/.sass-cache/d7994128a8698bb2ceceb95913642fad8f00b12b/tmph1xqzd.scssc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/item.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/item.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/item_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/models/item_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/items.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/items.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/items_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/controllers/items_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/items_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/items/show.json.jbuilder" />
-      <change type="DELETED" beforePath="C:\Users\brynp_000\Projects\WaywardSite\db\migrate\20150416105751_create_statuses.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\brynp_000\Projects\WaywardSite\db\migrate\20150420155828_devise_create_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\brynp_000\Projects\WaywardSite\db\migrate\20150420163736_add_user_id_to_statuses.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\brynp_000\Projects\WaywardSite\db\migrate\20150424212500_create_extended_profiles.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\brynp_000\Projects\WaywardSite\db\migrate\20150425200527_create_update_posts.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/WaywardSite.iml" afterPath="$PROJECT_DIR$/.idea/WaywardSite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/character.rb" afterPath="$PROJECT_DIR$/app/models/character.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/characters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/characters_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/characters/index.html.erb" afterPath="$PROJECT_DIR$/app/views/characters/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statuses/index.html.erb" afterPath="$PROJECT_DIR$/app/views/statuses/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/characters/show.html.erb" afterPath="$PROJECT_DIR$/app/views/characters/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb" afterPath="$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb" />
     </list>
     <ignored path="WaywardSite.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +18,8 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/WaywardSite@Development__WaywardSite.coverage" NAME="Development: WaywardSite Coverage Results" MODIFIED="1431167578857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
-    <SUITE FILE_PATH="coverage/WaywardSite@db_migrate__WaywardSite.coverage" NAME="db:migrate: WaywardSite Coverage Results" MODIFIED="1431172741468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
     <SUITE FILE_PATH="coverage/WaywardSite@IRB_console__WaywardSite.coverage" NAME="IRB console: WaywardSite Coverage Results" MODIFIED="1430853630941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
+    <SUITE FILE_PATH="coverage/WaywardSite@db_migrate__WaywardSite.coverage" NAME="db:migrate: WaywardSite Coverage Results" MODIFIED="1431172741468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
     <SUITE FILE_PATH="coverage/WaywardSite@Rails_console__WaywardSite.coverage" NAME="Rails console: WaywardSite Coverage Results" MODIFIED="1430940784630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
     <SUITE FILE_PATH="coverage/WaywardSite@routes__WaywardSite.coverage" NAME="routes: WaywardSite Coverage Results" MODIFIED="1431171940228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="WaywardSite" />
   </component>
@@ -69,7 +34,7 @@
             <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-2.2058823">
+                  <state vertical-scroll-proportion="0.0">
                     <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                     <folding />
                   </state>
@@ -109,7 +74,7 @@
             <file leaf-file-name="_form.html.erb" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/views/items/_form.html.erb">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="-2.7058823">
+                  <state vertical-scroll-proportion="0.0">
                     <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                     <folding />
                   </state>
@@ -147,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20150509115550_create_items.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="20150509115550_create_items.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.039032005">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -160,7 +125,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.32353">
+            <state vertical-scroll-proportion="0.0">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
@@ -170,7 +135,7 @@
       <file leaf-file-name="scaffolds.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -200,18 +165,18 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.558824">
+            <state vertical-scroll-proportion="0.0">
               <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46239212">
-              <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+            <state vertical-scroll-proportion="-21.32353">
+              <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -220,7 +185,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/statuses/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.558824">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
               <folding />
             </state>
@@ -230,7 +195,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/characters/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9411764">
+            <state vertical-scroll-proportion="0.0">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
@@ -271,7 +236,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20150509113835_create_items.rb" />
         <option value="$PROJECT_DIR$/app/views/items/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb" />
         <option value="$PROJECT_DIR$/app/models/character.rb" />
         <option value="$PROJECT_DIR$/app/models/item.rb" />
         <option value="$PROJECT_DIR$/app/views/items/edit.html.erb" />
@@ -285,6 +249,7 @@
         <option value="$PROJECT_DIR$/app/views/items/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/characters/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb" />
       </list>
     </option>
   </component>
@@ -336,7 +301,6 @@
     <panes>
       <pane id="RailsProjectView" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -599,6 +563,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -843,8 +808,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: WaywardSite" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.routes: WaywardSite" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.routes: WaywardSite" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: WaywardSite" />
         <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: WaywardSite" />
         <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console: WaywardSite" />
       </list>
@@ -867,15 +832,12 @@
     <frame x="1" y="1" width="2231" height="1400" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901752" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18961625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33206397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -884,7 +846,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901752" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33206397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1128,7 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61183435">
           <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,7 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,7 +1115,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18761726">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,19 +1126,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/status.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4705882">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1184,55 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/statuses_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/items/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7058823">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2058823">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/character.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13227513">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1254,7 +1158,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.32353">
+        <state vertical-scroll-proportion="0.0">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
@@ -1262,7 +1166,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/statuses/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.558824">
+        <state vertical-scroll-proportion="0.0">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
           <folding />
         </state>
@@ -1270,7 +1174,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/characters/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.558824">
+        <state vertical-scroll-proportion="0.0">
           <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
           <folding />
         </state>
@@ -1278,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/characters/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9411764">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
@@ -1300,10 +1204,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/status.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="33" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/statuses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13227513">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/items/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/character.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46239212">
-          <caret line="17" column="70" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        <state vertical-scroll-proportion="-21.32353">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20150509115550_create_items.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.039032005">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding />
         </state>
       </provider>
