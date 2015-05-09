@@ -16,9 +16,10 @@
       <a class="brand" href="/">Wayward Star</a>
       <ul class="nav">
         <!-- This will link to all of the posts using a Rails path -->
-        <li><%= link_to "Journals",feed_path %></li>
         <li><%= link_to "Members", user_list_path %></li>
         <li><%= link_to "Characters", characters_path %></li>
+        <li><%= link_to "Journals",feed_path %></li>
+        <li><%= link_to "Items", items_path %></li>
       </ul>
       <!-- This will be to either give the option to log in or register and if logged in. To go to the profile page or log out -->
       <ul class="nav pull-right">
@@ -32,9 +33,21 @@
       </ul>
     </div>
   </div>
-    
+
 </div>
 
+<% if current_user.present? %>
+
+
+  <div class="secondary-menu">
+    <div class="second-inner">
+      <div class="container">
+        <%= link_to "New Character", new_character_path %> <%= link_to "New Journal Entry", journal_new_path %> <%= link_to 'New Item', new_item_path %>
+      </div>
+
+    </div>
+  </div>
+<% end %>
 
 <div class="container">
   <!-- These are 2 tags required by Devise that we will address at a later date -->

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Items</h1>
+
+
+
+    <% @items.each do |item| %>
+
+
+
+
+    <h4><%= item.name %> | Quantity: <%= item.quantity %></h4>
+    <p class="my-pre"><%= item.description%></p>
+    <p><strong>Effect: </strong><%= item.effect %> | <strong>Effect Modifier: </strong> <%= item.modifier %></p>
+
+    Belongs to <%= item.character.first_name + " " + item.character.last_name %>
+
+    <br />
+    <br />
+    <%= link_to 'Edit', edit_item_path(item) %> |
+    <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    <hr>
+
+
+    <% end %>
+
+<br>
+
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150505201136) do
+ActiveRecord::Schema.define(version: 20150509115550) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "first_name"
@@ -34,6 +34,32 @@ ActiveRecord::Schema.define(version: 20150505201136) do
   end
 
   add_index "characters", ["user_id"], name: "index_characters_on_user_id"
+
+  create_table "inventories", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "quantity"
+    t.text     "effect"
+    t.integer  "modifier"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "character_id"
+  end
+
+  add_index "inventories", ["character_id"], name: "index_inventories_on_character_id"
+
+  create_table "items", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "quantity"
+    t.string   "effect"
+    t.integer  "modifier"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "character_id"
+  end
+
+  add_index "items", ["character_id"], name: "index_items_on_character_id"
 
   create_table "statuses", force: :cascade do |t|
     t.text     "content"

@@ -1,0 +1,23 @@
+<%= simple_form_for(@item) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+
+    <%= f.input :character_id, collection: Character.where(:user_id => current_user).all ,label_method: :first_name %>
+    <%= f.input :name %>
+
+    <%= f.input :description %>
+
+    <%= f.input :quantity %>
+
+    <%= f.input :effect %>
+
+    <%= f.input :modifier %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

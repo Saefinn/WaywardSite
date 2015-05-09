@@ -79,3 +79,32 @@ textarea {
     overflow: hidden;
 
 }
+
+.lean-left {
+    float: left;
+    margin-left: 50px;
+}
+
+.lean-bottom {
+    float: bottom;
+}
+
+.secondary-menu {
+    background: rgba(0,0,0,0.75);
+    max-width: 900px;
+    min-height: 20px;
+    margin:auto;
+    border-radius: 10px;
+}
+
+.secondary-menu a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(150,150,150);
+    float: left;
+
+}
+
+.secondary-menu a:hover {
+    color: rgb(255,255,255);
+}
