@@ -19,7 +19,9 @@ Rails.application.routes.draw do
   resources :statuses
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
-  
+
+  get 'rules', to: 'pages#index', as: :rules
+
   
   get 'journal', to: 'statuses#index', as: :journal
   get 'journal/:id/edit', to: 'statuses#edit', as: :journal_edit
