@@ -2,38 +2,40 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <div class="same-line">
+    <%= f.input :first_name, placeholder: 'First Name' %> <%= f.input :last_name, placeholder: 'Last Name' %>
+    </div>
 
-    <%= f.input :first_name %>
 
-    <%= f.input :last_name %>
 
-    <%= f.input :nick_name %>
+    <%= f.input :nick_name, placeholder: 'Nickname' %>
 
-    <%= f.input :title %>
+    <%= f.input :title, placeholder: 'Title' %>
 
-    <%= f.input :description %>
+    <%= f.input :description, placeholder: 'Description' %>
 
-    <%= f.input :traits%>
+    <%= f.input :traits, placeholder: 'Traits: "loving, vengeful"'%>
 
-    <%= f.input :skills %>
+    <%= f.input :skills, placeholder: 'Skills: "Archery, Conjury"' %>
 
-    <%= f.input :history %>
+    <%= f.input :history, placeholder: 'Character History' %>
 
-    <%= f.input :strength, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
-
-    <%= f.input :vitality, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
-
-    <%= f.input :agility, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
-
-    <%= f.input :dexterity, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
-
-    <%= f.input :intelligence, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
-
-    <%= f.input :mind, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Choose Level"  %>
+    <p>Determine the chance of a "Physical" attack connecting</p>
+    <%= f.input :strength, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Strength"  %>
+    <p>Determines how much HP a character has. 5hp per rank</p>
+    <%= f.input :vitality, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Vitality"  %>
+    <p>Determines the chances of any speech related move having influence (for example: taunts)</p>
+    <%= f.input :agility, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Charisma"  %>
+    <p>Determines the chance of a "Ranged" attack connecting</p>
+    <%= f.input :dexterity, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Dexterity"  %>
+    <p>Determines the chance of a "Magic" attack connecting</p>
+    <%= f.input :intelligence, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Intelligence"  %>
+    <p>Determines the chance of a "Support" or "Healing" based spell working</p>
+    <%= f.input :mind, collection: ['very-low', 'low', 'mid', 'high', 'very-high'], prompt: "Mind"  %>
 
   </div>
 
-  <div class="form-actions">
+  <div>
     <%= f.button :submit %>
   </div>
 <% end %>

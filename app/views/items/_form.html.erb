@@ -4,20 +4,21 @@
   <div class="form-inputs">
 
 
-    <%= f.input :character_id, collection: Character.where(:user_id => current_user).all ,label_method: :first_name %>
-    <%= f.input :name %>
+    <%= f.input :character_id, collection: Character.where(:user_id => current_user).all ,label_method: :first_name, prompt: "Select a Character" %>
 
-    <%= f.input :description %>
+    <%= f.input :name, placeholder: 'Item Name' %>
 
-    <%= f.input :quantity %>
-
-    <%= f.input :effect %>
-
-    <%= f.input :modifier %>
+    <%= f.input :description, placeholder: 'Item Description' %>
+    <%= f.input :quantity, placeholder: 'Quantity' %>
+    <br />
+    <p>This is to give the item a purpose. This is a placeholder for now. However, it will be used in battle based roleplay</p>
+    <%= f.input :effect, placeholder: 'Effect' %>
+    <p>This will be a numeric value to determine how effective an item is. For now. It is blank, whilst RP rules are being figured out.</p>
+    <%= f.input :modifier, placeholder: 'Effect Modifier' %>
 
   </div>
 
-  <div class="form-actions">
+  <div>
     <%= f.button :submit %>
   </div>
 <% end %>

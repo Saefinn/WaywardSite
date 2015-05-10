@@ -39,7 +39,7 @@
 </p>
 
 <p>
-  <strong>Agility:</strong>
+  <strong>Charisma:</strong>
   <%= @character.agility %>
 </p>
 
@@ -74,20 +74,15 @@
 <h3>Inventory</h3>
 <br />
 <%@items.each do |item| %>
-<div class="lean-left">
-    <h5><%= item.name %> x<%= item.quantity %></h5>
+<div class="item">
+    <h5><%= link_to item.name, item_path(item) %></h5>
     <%= link_to 'Edit', edit_item_path(item) %> |
     <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
 <%end%>
 
-<br />
-<br />
-<br />
-<br />
 
-
-<div class="lean-bottom">
+<div class="bottom">
     <% if current_user.present? %>
         <% if @character.user.profile_name == current_user.profile_name %>
             <%= link_to 'Edit', edit_character_path(@character) %> |

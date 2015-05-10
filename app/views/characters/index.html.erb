@@ -6,7 +6,9 @@
     <% end %>
 
     <% @characters.each do |character| %>
-      
+
+
+    <div class="item">
         <h4>
           <%= link_to character.first_name + " " + character.last_name, character %>
 
@@ -24,9 +26,7 @@
             <% end %>
         <% end %>
 
-
-
-        <hr>
+    </div>
 
 
 
@@ -34,5 +34,9 @@
 
 
 <br>
+
+<div class="bottom">
+
+</div>
 
 

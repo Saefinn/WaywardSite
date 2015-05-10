@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Items</h1>
+<h1>Items</h1>
 
 
 
@@ -8,23 +8,26 @@
 
 
 
+    <div class = "item">
+        <h4><%= link_to item.name, item_path(item) %></h4>
+       <p>Quantity: <%= item.quantity %></p>
+        <p class="my-pre"><%= item.description%></p>
+        <p><strong>Effect: </strong><%= item.effect %> | <strong>Effect Modifier: </strong> <%= item.modifier %></p>
 
-    <h4><%= item.name %> | Quantity: <%= item.quantity %></h4>
-    <p class="my-pre"><%= item.description%></p>
-    <p><strong>Effect: </strong><%= item.effect %> | <strong>Effect Modifier: </strong> <%= item.modifier %></p>
+        Belongs to <%= item.character.first_name + " " + item.character.last_name %>
 
-    Belongs to <%= item.character.first_name + " " + item.character.last_name %>
+        <br />
+        <br />
+        <%= link_to 'Edit', edit_item_path(item) %> |
+        <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-    <br />
-    <br />
-    <%= link_to 'Edit', edit_item_path(item) %> |
-    <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-    <hr>
+    </div>
 
 
     <% end %>
 
 <br>
 
+<div class="bottom">
 
+</div>

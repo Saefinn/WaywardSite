@@ -11,11 +11,11 @@
     </div>
   <% end %>
 
-    <h4>Entry for <%=  current_user.profile_name%></h4>
+
    
-   <h4>Title </h4><%= f.input :title %>
+   <%= f.input :title, placeholder: 'Journal Title' %>
    
-   <h4>Journal Entry</h4><div class="post-box"><%= f.input :content %></div>
+   <div class="post-box"><%= f.input :content, placeholder: 'Journal Content' %></div>
    
    
    </br>

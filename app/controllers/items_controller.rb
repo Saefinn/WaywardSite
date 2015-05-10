@@ -24,14 +24,20 @@ class ItemsController < ApplicationController
     #myvalue = CGI.parse(query_test)
     #@test = myvalue['name'].first
 
+    #Store all characters belonging to the currnent user into a variable
     myvar = Character.where(:user_id =>current_user).all
+    #The "moo" variable is to test whether or not there are any characters belonging to the user
+    #So by default, it's false
     moo = false
+    #For every character in the variable, do some stuff with it.
     myvar.each do |char|
+      #Check if the character owning the item you wish to edit is one of the characters
+      #belonging to the user, then tell Ruby there's a match! (Huzzah!)
       if @item.character_id == char.id
         moo = true
       end
     end
-
+    #If nothing is found, return a 404, to deny the user access to this page.
     if moo == false
       render file: 'public/denied', status: 404, formats: [:html]
     end

@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  get 'pages/index'
+
   resources :items
   resources :characters
+  resources :pages
   get 'show_users/show'
 
   get 'profiles/show'
