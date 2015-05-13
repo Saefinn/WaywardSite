@@ -2,120 +2,145 @@
 
 
 
-*********************************
-******CLONING THE PROJECT********
-*********************************
+
+
+[CLONING THE PROJECT]
+
+
 
 [Cloning instructions]
+
 *Use the following Git Clone: https://github.com/Saefinn/WaywardStarSite.git
+
 *Navigate to Project File in terminal, for example: cd E:\Projects\RubyOnRailsz\WaywardStar
+
 *Use the follow commands
+
 bundle
+
 rake db:migrate
+
 rails server
 
 
-********************************
-*********DEPLOYMENT*************
-********************************
 
-ON HEROKU:
+[DEPLOYMENT]
+
+
+
+
+[On Heroku]
+
 
 [Install gems]
+
 heroku run bundle
 
+
 [Update Database Migrations Individually]
+
 heroku run db:migrate:status
+
 heroku run db:migrate:up VERSION:[version]
 
 
 
 
 
-****************************************************************************
-******************Additional Gems Used**************************************
-****************************************************************************
 
-********FORMS**********
-*****Simple Forms******
-***********************
+
+
+[Additional Gems Used]
+
+[Simple Form]
+
 https://github.com/plataformatec/simple_form
+
 
 gem 'simple_form'
 
 
-*******ACCOUNTS*******
-*********Devise*******
-**********************
+[Devise]
+
 https://github.com/plataformatec/devise
+
 
 gem 'devise'
 
-*****DATABASE********
-*****SQLite3*********
-******Postgre********
-********************
+
+[Sqlite3 & Postgre]
+
 SQLite3 -> https://www.sqlite.org/
+
 PostgreSQL -> http://www.postgresql.org/
 
+
 group :development, :test do
+
   gem 'sqlite3'
+
 end
+
 
 group :production do
+
   gem "pg"
+
 end
 
-***********************************************************
-******************DEVELOPMENT TOOLS&***********************
-***********************************************************
 
-****HOST/Production****
+
+[DEVELOPMENT TOOLS]
+
+
+
+
+[Host/Production]
+
 Heroku
+
 https://heroku.com/
 
-****IDE****
+
+[IDE]
+
 RubyMine 7.1
+
 https://www.jetbrains.com/ruby/
+
 KomodoEdit (Free Alternative)
+
 http://komodoide.com/komodo-edit/
 
-***Software versions***
+
+[Software versions]
+
 
 Rails 4.2.1 -> http://rubyonrails.org/download/
+
 Ruby 2.0 -> https://www.ruby-lang.org/en/downloads/
 
 
 
 
+--Structure
+
+*Home --> Journals (Replace with News) --> "news" view, model & controller
+
+*Pages --> For Viewing Different Rules --> "Pages" view & controller
+
+*Journals --> Stories written by user --> "status" view, controller & model
+
+*Characters --> Character profiles for each user --> "character" view, controller & model
+
+*Items --> Item List for Each Character --> "item" view, controller & model
+
+*Members --> Profiles for each user --> "profile" view and controller, "user" model
 
 
 
 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+

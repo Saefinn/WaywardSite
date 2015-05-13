@@ -14,6 +14,8 @@ before_action :configure_permitted_parameters, if: :devise_controller?
 
 protected
 
+  #This is to provide permissions for user account creation and updates
+  #This is require for this data to post, because of security.
 def configure_permitted_parameters
   devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :profile_name, :description, :character_names]
   devise_parameter_sanitizer.for(:account_update) << [:first_name, :last_name, :description, :character_names]

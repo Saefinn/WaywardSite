@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  get 'pages/index'
-
+  #Get resources for each controller to map routes
   resources :items
   resources :characters
   resources :pages
+  resources :statuses
+
+  #get specific routes for views that match no models or scaffolding
   get 'show_users/show'
-
   get 'profiles/show'
+  get 'pages/index'
 
+
+  #Map routes for "devise"
   devise_for :users
   
   devise_scope :user do
@@ -16,13 +20,11 @@ Rails.application.routes.draw do
     get 'logout',to: 'devise/sessions#destroy', as: :logout
   end
   
-  resources :statuses
+  #Custom routes
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
-
   get 'rules', to: 'pages#index', as: :rules
 
-  
   get 'journal', to: 'statuses#index', as: :journal
   get 'journal/:id/edit', to: 'statuses#edit', as: :journal_edit
   get 'journal/new', to: 'statuses#new', as: :journal_new

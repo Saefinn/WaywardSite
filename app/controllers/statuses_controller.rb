@@ -21,6 +21,7 @@ class StatusesController < ApplicationController
 
   # GET /statuses/1/edit
   def edit
+    #Check if the status's owner is the user. If it's not, render a 404 access denied.
     if @status.user_id != current_user.id      
         render file: 'public/denied', status: 404, formats: [:html]
     end
@@ -32,6 +33,7 @@ class StatusesController < ApplicationController
   # POST /statuses.json
   def create
     @status = Status.new(status_params)
+    #Make the current user the owner of this status.
     @status.user_id = current_user.id
     
 
@@ -49,7 +51,7 @@ class StatusesController < ApplicationController
   # PATCH/PUT /statuses/1
   # PATCH/PUT /statuses/1.json
   def update
-     @status.user_id = current_user.id
+
       
         respond_to do |format|
       if @status.update(status_params)

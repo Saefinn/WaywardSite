@@ -20,11 +20,9 @@ class ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
-    #query_test = request.query_string
-    #myvalue = CGI.parse(query_test)
-    #@test = myvalue['name'].first
 
-    #Store all characters belonging to the currnent user into a variable
+
+    #Store all characters belonging to the current user into a variable
     myvar = Character.where(:user_id =>current_user).all
     #The "moo" variable is to test whether or not there are any characters belonging to the user
     #So by default, it's false
@@ -63,12 +61,7 @@ class ItemsController < ApplicationController
   # PATCH/PUT /items/1.json
   def update
 
-    #query_test = request.query_string
-    #myvalue = CGI.parse(query_test)
-    #mytest = myvalue['name'].first.to_param
 
-
-    #@item.character_id = Character.find_by_first_name("Xhayu").id
 
 
     respond_to do |format|
