@@ -1,60 +1,55 @@
-== README
+##Cloning The Project
 
 
 
+**Download Rails Installer - Ruby 2.0**
+*http://railsinstaller.org/en  
 
+**Download Node.js**
+*https://nodejs.org/
 
-[CLONING THE PROJECT]
+**Clone Git**
+*git clone https://github.com/Saefinn/WaywardStarSite.git-
 
+**Install RubyGems**
+*https://rubygems.org/pages/download
+*Download Zip
+*Extra Zip
+*Navigate to directory via command prompt
+*ruby setup.rb
 
-
-[Cloning instructions]
-
-*Use the following Git Clone: https://github.com/Saefinn/WaywardStarSite.git
-
-*Navigate to Project File in terminal, for example: cd E:\Projects\RubyOnRailsz\WaywardStar
-
-*Use the follow commands
-
+**Install The Gems**
+*gem install rake -v '10.4.2'
 bundle
 
-bundle update coffee-script-source 1.8.0
-
-rake db:migrate 
-
-rails server
-
-
-
-[DEPLOYMENT]
+**Setup Server & Data**
+*rake db:migrate
+*rails server
 
 
 
 
-[On Heroku]
+##DEPLOYMENT##
 
+*Download Heroku's Toolbelt: https://toolbelt.heroku.com/windows
 
-[Install gems]
+*Add a git remote to the heroku server and do a git push to it. 
 
-heroku run bundle
+**Commandline - first run**
 
+*heroku run bundle
+*heroku run db:migrate
 
-[Update Database Migrations Individually]
+**For each update, for new migrations** 
 
-heroku run db:migrate:status
-
-heroku run db:migrate:up VERSION:[version]
-
-
-
-
-
+*heroku run db:migrate:status
+*heroku run db:migrate:up VERSION:[version]
 
 
 
-[Additional Gems Used]
+##Additional Gems Used##
 
-[Simple Form]
+**[Simple Form**
 
 https://github.com/plataformatec/simple_form
 
@@ -62,7 +57,7 @@ https://github.com/plataformatec/simple_form
 gem 'simple_form'
 
 
-[Devise]
+**Devise**
 
 https://github.com/plataformatec/devise
 
@@ -70,7 +65,7 @@ https://github.com/plataformatec/devise
 gem 'devise'
 
 
-[Sqlite3 & Postgre]
+**Sqlite3 & Postgre**
 
 SQLite3 -> https://www.sqlite.org/
 
@@ -92,19 +87,19 @@ end
 
 
 
-[DEVELOPMENT TOOLS]
+##DEVELOPMENT TOOLS##
 
 
 
 
-[Host/Production]
+**Host/Production**
 
 Heroku
 
 https://heroku.com/
 
 
-[IDE]
+**IDE**
 
 RubyMine 7.1
 
@@ -115,7 +110,7 @@ KomodoEdit (Free Alternative)
 http://komodoide.com/komodo-edit/
 
 
-[Software versions]
+##Software versions##
 
 
 Rails 4.2.1 -> http://rubyonrails.org/download/
@@ -125,7 +120,7 @@ Ruby 2.0 -> https://www.ruby-lang.org/en/downloads/
 
 
 
---Structure
+##Structure##
 
 *Home --> Journals (Replace with News) --> "news" view, model & controller
 
