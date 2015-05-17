@@ -18,7 +18,9 @@
 
 bundle
 
-rake db:migrate
+bundle update coffee-script-source 1.8.0
+
+rake db:migrate 
 
 rails server
 
