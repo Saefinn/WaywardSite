@@ -5,13 +5,13 @@ class CharactersController < ApplicationController
   # GET /characters
   # GET /characters.json
   def index
-    @characters = Character.all
+    @characters = Character.paginate(:page => params[:page], :per_page => 20)
   end
 
   # GET /characters/1
   # GET /characters/1.json
     def show
-      @items = @character.items.all
+      @items = @character.items.paginate(:page => params[:page], :per_page => 8)
   end
 
   # GET /characters/new
@@ -83,3 +83,5 @@ class CharactersController < ApplicationController
       params.require(:character).permit(:first_name, :last_name, :nick_name, :title, :description, :traits, :skills, :history, :strength, :vitality, :agility, :dexterity, :intelligence, :mind)
     end
 end
+
+

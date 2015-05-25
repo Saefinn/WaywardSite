@@ -3,6 +3,8 @@
 </div>
 
 
+
+
 <!-- An 'each' loop taking each item in 'statuses' and assigning it to the value 'status' for use in each iteration -->
 <% @statuses.each do |status| %>
 <div class="journal">
@@ -52,3 +54,8 @@
     <% end %>
   </div>
 <% end %>
+
+
+<div class="digg_pagination">
+<%= will_paginate @statuses %>
+</div>
