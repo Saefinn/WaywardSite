@@ -73,14 +73,19 @@
 
 <h3>Inventory</h3>
 <br />
-<%@items.each do |item| %>
-<div class="item">
-    <h5><%= link_to item.name, item_path(item) %></h5>
-    <%= link_to 'Edit', edit_item_path(item) %> |
-    <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
-</div>
-<%end%>
+<section>
+  <ul id="item" class="section group">
+    <%@items.each do |item| %>
 
+            <li class="col span_1_of_3">
+                <h5><%= link_to item.name, item_path(item) %></h5>
+                <%= link_to 'Edit', edit_item_path(item) %> |
+                <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </li>
+
+    <%end%>
+  </ul>
+</section>
 
 <div class="bottom">
     <% if current_user.present? %>

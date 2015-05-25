@@ -5,24 +5,23 @@
 
 <!-- An 'each' loop taking each item in 'statuses' and assigning it to the value 'status' for use in each iteration -->
 <% @statuses.each do |status| %>
-<div class="status">
-  <div class="row">
-  <div class="span1">
-    
+<div class="journal">
+
   <%= image_tag status.user.gravatar_url %>
-  </div>
-  <div class="span7"> 
+
     
   
   <!-- Display the journal title name -->
   
-  <strong><h4><%= link_to status.title, "journal/#{status.id}" %></h4></strong>
+  <strong><h3><%= link_to status.title, "journal/#{status.id}" %></h3></strong>
+
+  <p class="text-summary"><%=status.content%></p>
   <!-- Display the author name -->
   <a href=<%=status.user.profile_name %>> By <%= status.user.profile_name %></a>
   
   
   <!-- Display how long ago it was posted -->
-  <div class="meta">
+
     <%= time_ago_in_words(status.created_at) + " ago" %>
     <!-- Display options for editing and deleting these. Whether they display or not relies on CSS styling and Javascript (see: "statuses.coffee") -->
     <% if current_user.present? %>
@@ -52,7 +51,4 @@
     
     <% end %>
   </div>
-</div>
-  </div>
-</div>
 <% end %>

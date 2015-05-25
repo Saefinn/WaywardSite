@@ -1,42 +1,35 @@
 <p id="notice"><%= notice %></p>
-
 <h1>Characters</h1>
+<p>Below is a list of characters registered on this site.</p>
+<section>
+
+  <ul id="item" class="section group">
+
     <% if current_user.present? %>
 
     <% end %>
 
-    <% @characters.each do |character| %>
 
-
-    <div class="item">
-        <h4>
-          <%= link_to character.first_name + " " + character.last_name, character %>
-
-        </h4>
-        <p>
-          <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
-        </p>
-
-        <% if current_user.present? %>
-            <% if character.user.profile_name == current_user.profile_name %>
-                <span class="admin">
-                    <%= link_to 'Edit', edit_character_path(character) %> |
-                    <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </span>
-            <% end %>
+        <% @characters.each do |character| %>
+           <li class="col span_1_of_3">
+                 <h4>
+                  <%= link_to character.first_name + " " + character.last_name, character %>
+                 </h4>
+                <p>
+                  <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
+                </p>
+                <% if current_user.present? %>
+                    <% if character.user.profile_name == current_user.profile_name %>
+                        <span class="admin">
+                            <%= link_to 'Edit', edit_character_path(character) %> |
+                            <%= link_to 'Delete', character, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        </span>
+                    <% end %>
+                <% end %>
+           </li>
         <% end %>
 
-    </div>
-
-
-
-    <% end %>
-
-
-<br>
-
-<div class="bottom">
-
-</div>
+     </ul>
+</section>
 
 

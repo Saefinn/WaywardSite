@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-    padding-top: 40px;
+
     background-image: url("http://i.imgur.com/0GjU6l9.jpg");
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -23,13 +23,53 @@ body {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
 }
+
+
+#Logo a {
+    text-decoration: none;
+    font-size: 64px;
+    color: rgb(240, 240, 240);
+    text-shadow:5px 5px 5px #000;
+
+}
+
 
 
 .alert {
     margin-top: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px 0;
+    border-radius: 10px;
+    color: rgb(200, 200, 200);
 }
 
+.alert button {
+    background-color:transparent;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    border:none;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+
+}
+
+/* page display */
+
+/* For displaying multi line content */
 .my-pre {
     background: none;
     border: none;
@@ -39,28 +79,195 @@ body {
     
 }
 
+/* Main body content */
+.main-text {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 15px 15px 15px;
+    background-color: rgba(255,255,255,0.85);
+    width: 95%;
+    border-radius: 5px;
+}
+
+
+
+
+.indent {
+    margin-left: 20px;
+}
+
+/*used for summaries - like for profiles */
+.text-summary {
+
+    height: 64px;
+    overflow: hidden;
+
+}
+
+.lean-left {
+    float: left;
+    margin-left: 50px;
+}
+
+.lean-bottom {
+    float: bottom;
+}
+
+
+
+/* An item box for display blocks of information */
+#item {
+    margin-top: 20px;
+
+    min-width: 100%;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+#item li {
+
+    width: 20%;
+    margin: 1%;
+
+
+    background-color: rgba(245,240, 240, 0.75);
+
+
+    border-radius: 10px;
+
+    padding: 10px 10px;
+
+
+
+}
+
+#item li a {
+    text-decoration: none;
+    color: rgb(20,20,20);
+}
+
+
+.journal {
+    background-color: rgba(255,255,255, 0.5);
+    margin-bottom: 5px;
+    padding: 1%;
+    padding-top: 2px;
+}
+
+.journal h3 a {
+    text-decoration: none;
+
+}
+
+
+
+
+.journal img {
+    float: left;
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+    width: 100%;
+}
+.span_2_of_3 {
+    width: 66.1%;
+}
+.span_1_of_3 {
+    width: 25%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+
+
+
+/*
+background-color: rgba(245,240,240, 0.75);
+max-width: 300px;
+
+padding: 15px;
+margin-left: 10px;
+border-radius: 10px;
+text-decoration: none;
+margin-top: 10px;
+*/
+
+.same-line {
+    float: left;
+}
+
+
+
+
+.info-box {
+    background-color: rgba(255,255,255, 0.75);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Forms */
+
 textarea {
     width: 98%;
     max-width: 98%;
     min-height: 100px;
+
     
 }
+
+
 
 .post-box textarea{
     min-height: 300px;
 }
 
 
-.main-text {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 15px 15px 15px;
-    background-color: rgba(255,255,255,0.85);
-    width: 100%;
-    border-radius: 5px;
-}
 
 
+/* Hide labels made by simple forms */
 .text label{
     display: none;
 }
@@ -75,31 +282,85 @@ textarea {
 
 
 
-.indent {
-    margin-left: 20px;
+
+
+/* MENU */
+#menu {
+    text-align: center;
+    padding: 10px 0;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.7);
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+
 }
 
-.text-summary {
+#menu ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
+}
 
-    height: 60px;
-    overflow: hidden;
+#menu li {
+    display: inline-block;
+}
+
+#menu a {
+    font-weight: 800;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgb(150,150,150);
 
 }
 
-.lean-left {
-    float: left;
-    margin-left: 50px;
+#menu a:hover {
+    color: rgb(205,205,205);
 }
 
-.lean-bottom {
-    float: bottom;
+/* User login menu */
+#login-bar {
+    padding: 5px 0;
+    background-color: rgba(50,50,50, 0.8);
+    border-radius: 10px;
+    float: right;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+
 }
 
+#login-bar ul {
+    list-style: none;
+    margin: 0 14px;
+    padding: 0;
+
+}
+
+#login-bar li {
+    display: inline-block;
+}
+
+#login-bar a {
+    padding: 15px 10px;
+    text-decoration: none;
+    color: rgb(150,150,150)
+
+}
+
+#login-bar a:hover {
+    color: rgb(205,205,205);
+}
+
+
+/* secondary menu */
 .secondary-menu {
     background: rgba(0,0,0,0.75);
-    max-width: 900px;
-    min-height: 20px;
+    max-width: 90%;
+    padding: 5px 0;
     margin:auto;
+    margin-top: 3px;
     border-radius: 10px;
 }
 
@@ -107,7 +368,7 @@ textarea {
     margin: 10px;
     text-decoration: none;
     color: rgb(150,150,150);
-    float: left;
+
 
 }
 
@@ -116,31 +377,4 @@ textarea {
 }
 
 
-.item {
-    background-color: rgba(245,240,240, 0.75);
-    max-width: 300px;
 
-    padding: 15px;
-    margin-left: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 10px;
-
-}
-
-.same-line {
-    float: left;
-}
-
-
-
-.bottom {
-
-}
-
-.info-box {
-    background-color: rgba(255,255,255, 0.75);
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 20px;
-}

@@ -2,13 +2,13 @@
 
 <h1>Items</h1>
 
-
-
+<section>
+    <ul id="item" class="section group">
     <% @items.each do |item| %>
 
 
 
-    <div class = "item">
+      <li class="col span_1_of_3">
         <h4><%= link_to item.name, item_path(item) %></h4>
        <p>Quantity: <%= item.quantity %></p>
         <p class="my-pre"><%= item.description%></p>
@@ -21,13 +21,9 @@
         <%= link_to 'Edit', edit_item_path(item) %> |
         <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-    </div>
+         </li>
 
 
     <% end %>
-
-<br>
-
-<div class="bottom">
-
-</div>
+    </ul>
+</section>
