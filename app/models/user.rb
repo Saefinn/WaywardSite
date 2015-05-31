@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   #Make each user have many statuses assigned to them. This creates a relation between the user and multiple statuses         
   has_many :statuses
   has_many :characters
+  has_many :events
   #attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :profile_name
   
   #Validations

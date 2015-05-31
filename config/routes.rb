@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   #Get resources for each controller to map routes
   resources :items
   resources :characters
@@ -22,7 +23,7 @@ Rails.application.routes.draw do
   
   #Custom routes
   get 'feed', to: 'statuses#index', as: :feed
-  root to: 'statuses#index'
+  root to: 'events#index'
   get 'rules', to: 'pages#index', as: :rules
 
   get 'journal', to: 'statuses#index', as: :journal

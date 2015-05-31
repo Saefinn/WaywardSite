@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150509115550) do
+ActiveRecord::Schema.define(version: 20150531113537) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "first_name"
@@ -35,6 +35,30 @@ ActiveRecord::Schema.define(version: 20150509115550) do
 
   add_index "characters", ["user_id"], name: "index_characters_on_user_id"
 
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "date"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "user_id"
+  end
+
+  add_index "events", ["user_id"], name: "index_events_on_user_id"
+
+  create_table "inventories", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "quantity"
+    t.text     "effect"
+    t.integer  "modifier"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "character_id"
+  end
+
+  add_index "inventories", ["character_id"], name: "index_inventories_on_character_id"
+
   create_table "items", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -49,11 +73,12 @@ ActiveRecord::Schema.define(version: 20150509115550) do
   add_index "items", ["character_id"], name: "index_items_on_character_id"
 
   create_table "statuses", force: :cascade do |t|
-    t.string   "title"
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
+    t.string   "title"
+    t.string   "meta_tags"
   end
 
   add_index "statuses", ["user_id"], name: "index_statuses_on_user_id"
@@ -62,7 +87,6 @@ ActiveRecord::Schema.define(version: 20150509115550) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "profile_name"
-    t.text     "profile_description"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

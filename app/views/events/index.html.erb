@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Events</h1>
+
+
+
+
+<br/>
+    <% @events.each do |event| %>
+     
+     
+     <div class="journal">
+      <%= image_tag event.user.gravatar_url %>
+        <strong><h3><%= link_to event.title, event %></h3></strong>
+        <p class="text-summary"><%= event.description.bbcode_to_html.html_safe %></p>
+        <p><strong>Time: </strong><%= event.date.strftime('%B %e at %l:%M %p (%Z)') %></p>
+        
+        <% if current_user.present? %>
+          <% if event.user.profile_name == current_user.profile_name %>
+            <%= link_to 'Edit', edit_event_path(event) %> | <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+          <% end %>
+        <% end %>
+        <p>Created by <a href=<%=event.user.profile_name %>><%= event.user.profile_name %></a></p>
+      
+      </div>   
+    <% end %>
+  
+
+<br><div class="digg_pagination">
+<%= will_paginate @events %>
+    </div>
+

@@ -61,14 +61,14 @@
 
 
   <h3>Description:</h3>
-  <p><div class="my-pre"><%= @character.description %></div></p>
+  <p><div class="my-pre"><%= @character.description.bbcode_to_html.html_safe %></div></p>
 
 
 
 
 
   <h3>History:</h3>
-  <p><div class="my-pre"><%= @character.history %></div></p>
+  <p><div class="my-pre"><%= @character.history.bbcode_to_html.html_safe %></div></p>
 
 
 <h3>Inventory</h3>
