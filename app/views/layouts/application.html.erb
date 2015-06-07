@@ -5,6 +5,7 @@
   <!-- Link all necessary Javascripts and Stylesheets and meta tags -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,800|Changa+One:400,400italic' rel='stylesheet' type='text/css'>
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -33,7 +34,7 @@
         <li><%= link_to "Characters", characters_path %></li>
         <li><%= link_to "Journals",feed_path %></li>
         <li><%= link_to "Items", items_path %></li>
-        <li><%= link_to "Events", events_path %></li>
+        <li id="events"><%= link_to "Events", events_path %></li>
 
       </ul>
 </div>
