@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :characters
   resources :pages
   resources :statuses
+  resources :posts
+  
+  
 
   #get specific routes for views that match no models or scaffolding
   get 'show_users/show'
