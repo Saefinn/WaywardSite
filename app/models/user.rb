@@ -8,6 +8,8 @@ class User < ActiveRecord::Base
   has_many :statuses
   has_many :characters
   has_many :events
+  has_many :posts
+  has_many :comments
   #attr_accessible :email, :password, :password_confirmation, :remember_me, :first_name, :last_name, :profile_name
   
   #Validations

@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   resources :characters
   resources :pages
   resources :statuses
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+  
   
   
 

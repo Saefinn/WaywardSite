@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150531113537) do
+ActiveRecord::Schema.define(version: 20150607194845) do
 
   create_table "characters", force: :cascade do |t|
     t.string   "first_name"
@@ -35,6 +35,17 @@ ActiveRecord::Schema.define(version: 20150531113537) do
 
   add_index "characters", ["user_id"], name: "index_characters_on_user_id"
 
+  create_table "comments", force: :cascade do |t|
+    t.text     "comment"
+    t.integer  "post_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["post_id"], name: "index_comments_on_post_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+
   create_table "events", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
@@ -45,6 +56,25 @@ ActiveRecord::Schema.define(version: 20150531113537) do
   end
 
   add_index "events", ["user_id"], name: "index_events_on_user_id"
+
+  create_table "f_threads", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "section_id"
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "f_threads", ["section_id"], name: "index_f_threads_on_section_id"
+  add_index "f_threads", ["user_id"], name: "index_f_threads_on_user_id"
+
+  create_table "forums", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "inventories", force: :cascade do |t|
     t.string   "name"
@@ -72,6 +102,14 @@ ActiveRecord::Schema.define(version: 20150531113537) do
 
   add_index "items", ["character_id"], name: "index_items_on_character_id"
 
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+  end
+
   create_table "statuses", force: :cascade do |t|
     t.text     "content"
     t.datetime "created_at", null: false
@@ -82,6 +120,15 @@ ActiveRecord::Schema.define(version: 20150531113537) do
   end
 
   add_index "statuses", ["user_id"], name: "index_statuses_on_user_id"
+
+  create_table "topics", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "last_poster_id"
+    t.datetime "last_post_at"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "forum_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
