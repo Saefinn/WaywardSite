@@ -1,14 +1,49 @@
 <h1><%= @post.title%></h1>
 <h4>Posted by <%= @post.user.profile_name %></h4>
-
+<div class="thread">
 <p class="my-pre"><%= @post.content.bbcode_to_html.html_safe  %></p>
+
+ <% if current_user.present? %>
+      <% if @post.user.profile_name == current_user.profile_name %>
+        <span class="admin">
+          <%= link_to "Edit", edit_post_path(@post) %>
+          <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you Sure?" } %>
+          
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+      <% if current_user.profile_name == "admin" %>
+        <span class="admin">
+          <%= link_to "Edit", edit_post_path(@post) %>
+          <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you Sure?" } %>
+          
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+  <% end %>
+
+
+</div>
 
 <h2><%= @post.comments.count %> replies</h2>
 <%= render @post.comments %>
-<h3> Reply to Thread </h3>
-<%= render "comments/form" %>
-
-<%= link_to "Edit", edit_post_path(@post) %>
-<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you Sure?" } %>
 
 
+<% if current_user.present? %>
+  <h3> Reply to Thread </h3>
+  <%= render "comments/form" %>
+<% end %>
+
+
+<br/>
+
+ 
+  

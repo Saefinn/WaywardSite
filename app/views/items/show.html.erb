@@ -25,6 +25,28 @@
   <strong>Modifier:</strong>
   <%= @item.modifier %>
 </p>
+  <% if current_user.present? %>
+      <% if @item.character.user.profile_name == current_user.profile_name %>
+        <span class="admin">
+          <%= link_to 'Edit', edit_item_path(@item) %> |
+          <%= link_to 'Back', items_path %>
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+      <% if current_user.profile_name == "admin" %>
+        <span class="admin">
+			<%= link_to 'Edit', edit_item_path(@item) %> |
+            <%= link_to 'Back', items_path %>
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+<% end %>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>

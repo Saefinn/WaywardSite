@@ -172,6 +172,28 @@ body {
 }
 
 
+
+.thread {
+    background-color: rgba(255,255,255, 0.5);
+    margin-bottom: 5px;
+    padding: 1%;
+    padding-top: 2px;
+}
+
+.thread h3 a {
+    text-decoration: none;
+
+}
+
+
+
+
+.thread img {
+    display: block;
+}
+
+
+
 /*  SECTIONS  */
 .section {
     clear: both;

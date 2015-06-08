@@ -18,9 +18,31 @@
 
         <br />
         <br />
-        <%= link_to 'Edit', edit_item_path(item) %> |
+        
+  <% if current_user.present? %>
+      <% if item.character.user.profile_name == current_user.profile_name %>
+        <span class="admin">
+          <%= link_to 'Edit', edit_item_path(item) %> |
         <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
-
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+      <% if current_user.profile_name == "admin" %>
+        <span class="admin">
+			<%= link_to 'Edit', edit_item_path(item) %> |
+            <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </span>
+        <% else %>
+          
+       
+      
+      <% end %>
+    
+<% end %>
          </li>
 
 
