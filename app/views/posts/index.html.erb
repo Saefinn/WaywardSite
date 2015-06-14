@@ -51,11 +51,7 @@
           
             <% if params[:section] == sect.title %>
               <h1><%= sect.title %> Threads</h1>
-                <% if @posts.where(:section => sect.title).last.comments.count > 0 %>
-                  <%= render @posts.where(:section => sect.title).last.comments.last %>
-                  <%= @posts.where(:section => sect.title).last.comments.last.created_at %>
-                  
-                <% end %>
+                
                 <% @posts.each do |post | %>
                   
                 <div class="journal">
