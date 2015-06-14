@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sections
   resources :events
   #Get resources for each controller to map routes
   resources :items

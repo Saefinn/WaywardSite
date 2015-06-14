@@ -1,8 +1,12 @@
 <%= simple_form_for(@post) do |f| %>
-
+  <%= f.input :section, collection: Section.all, value_method: :title, label_method: :title, prompt: "Select a Forum Section" %>
+  <br />
   <%= f.input :title, placeholder: 'Title'  %>
+  <br />
   <%= f.input :content, placeholder: 'Post' %>
+  
   <%= f.submit %>
+  
 
 
 <% end %>

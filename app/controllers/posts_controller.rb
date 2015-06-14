@@ -3,7 +3,12 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   def index
     #code
-    @posts = Post.paginate(:page => params[:page], :per_page => 12).order("created_at DESC")
+    @posts = Post.where(:section => params[:section]).paginate(:page => params[:page], :per_page => 12).order("created_at DESC")
+    @found = false
+    
+    #@posts = Post.paginate(:page => params[:page], :per_page => 12).order("created_at DESC")
+    #@posts = Post.where(:section => "test")
+    @sections = Section.all
   end
   
   def show
@@ -60,7 +65,7 @@ class PostsController < ApplicationController
   end
   
   def post_params
-    params.require(:post).permit(:title, :content)
+    params.require(:post).permit(:title, :content, :section)
   end
   
   

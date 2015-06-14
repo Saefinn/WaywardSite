@@ -1,19 +1,56 @@
-<h1>Threads</h1>
-<% @posts.each do |post | %>
 
-<div class="journal">
 
-  <h4><%= link_to post.title, post %> </h4>
-  <p>
-  Published <%= time_ago_in_words(post.created_at) %> ago
-  by
-  <%= post.user.profile_name %>
-  </p>
-</div>
+  
+
+
+<% @sections.each do |sect| %>
+          <% if @found == false %>
+            <% if params[:section] == sect.title %>
+              <% @found = true %>
+            <% end %>
+          <% end %>
+          
+          
 <% end %>
 
+<% if @found == false %>
+  <h1>Select a Forum</h1>
+<% end %>
 
+<% @sections.each do |sect| %>
+          
+            
+          <% if @found == false %>
+                <div class="journal">
+                    <h2><a href="?section=<%=sect.title%>"><%= sect.title %></a></h2>
+                </div>    
+          <% end %>
+          
+          
+          
+          
+            <% if params[:section] == sect.title %>
+              <h1><%= sect.title %> Threads</h1>
+                <% @posts.each do |post | %>
+                
+                <div class="journal">
+                
+                  <h4><%= link_to post.title, post %> </h4>
+                  <p>
+                  Published <%= time_ago_in_words(post.created_at) %> ago
+                  by
+                  <%= post.user.profile_name %>
+                  </p>
+                </div>
+                <% end %>
+                
+                
+                
+                <div class="digg_pagination">
+                <%= will_paginate @posts %>
+                </div>
+              
+             <%end %>
+          
+<% end %>   
 
-<div class="digg_pagination">
-<%= will_paginate @posts %>
-</div>
