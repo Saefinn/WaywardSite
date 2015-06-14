@@ -1,3 +1,16 @@
+<script>
+$(function() {
+    // Replace all textarea's
+    // with SCEditor
+    $("textarea").sceditor({
+        plugins: "bbcode",
+	style: "jquery.sceditor.default.min.css",
+    toolbar: "bold,italic,underline,strike|bulletlist,orderedlist,code,quote|image,link,unlink,maximize|left,center,right|color,cut,copy,paste,pastetext|source"
+    });
+});
+</script>
+
+
 <%= simple_form_for(@character) do |f| %>
   <%= f.error_notification %>
 
@@ -11,13 +24,13 @@
     <%= f.input :nick_name, placeholder: 'Nickname' %>
 
     <%= f.input :title, placeholder: 'Title' %>
-
+    <h3>Character Description</h3>
     <%= f.input :description, placeholder: 'Description' %>
 
     <%= f.input :traits, placeholder: 'Traits: "loving, vengeful"'%>
 
     <%= f.input :skills, placeholder: 'Skills: "Archery, Conjury"' %>
-
+    <h3>Character History</h3>
     <%= f.input :history, placeholder: 'Character History' %>
 
     <p>Determine the chance of a "Physical" attack connecting</p>

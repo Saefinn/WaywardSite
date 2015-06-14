@@ -1,3 +1,15 @@
+<script>
+$(function() {
+    // Replace all textarea's
+    // with SCEditor
+    $("textarea").sceditor({
+        plugins: "bbcode",
+	style: "jquery.sceditor.default.min.css",
+    toolbar: "bold,italic,underline,strike|bulletlist,orderedlist,code,quote|image,link,unlink,maximize|left,center,right|color,cut,copy,paste,pastetext|source"
+    });
+});
+</script>
+
 <%= simple_form_for(@item) do |f| %>
   <%= f.error_notification %>
 
@@ -7,7 +19,7 @@
     <%= f.input :character_id, collection: Character.where(:user_id => current_user).all ,label_method: :first_name, prompt: "Select a Character" %>
 
     <%= f.input :name, placeholder: 'Item Name' %>
-
+    <h3>Description</h3>
     <%= f.input :description, placeholder: 'Item Description' %>
     <%= f.input :quantity, placeholder: 'Quantity' %>
     <br />
