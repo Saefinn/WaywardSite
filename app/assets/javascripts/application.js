@@ -15,5 +15,14 @@
 //= require turbolinks
 //= require_tree .
 
-
-  $("#events").css("color", "black")
+$(document).on('page:change', function(){
+    $(".journal").hover(function(){
+        $(this).css("background-color", "rgb(250,250,250");
+    },
+    function(){
+        $(this).css("background-color", "white");
+    });
+    
+    
+    
+});

@@ -5,6 +5,8 @@ class PostsController < ApplicationController
     #code
     @posts = Post.where(:section => params[:section]).paginate(:page => params[:page], :per_page => 12).order("created_at DESC")
     @found = false
+    @comments = Comment.all.order("created_at ASC")
+    @posts_all = Post.all.order("created_at ASC")
     
     #@posts = Post.paginate(:page => params[:page], :per_page => 12).order("created_at DESC")
     #@posts = Post.where(:section => "test")
