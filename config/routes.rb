@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :news
   resources :sections
   resources :events
   #Get resources for each controller to map routes
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
   get 'show_users/show'
   get 'profiles/show'
   get 'pages/index'
-
+  get 'pages/about'
 
   #Map routes for "devise"
   devise_for :users
@@ -30,8 +31,10 @@ Rails.application.routes.draw do
   
   #Custom routes
   get 'feed', to: 'statuses#index', as: :feed
-  root to: 'events#index'
+  #root to: 'events#index'
+  root to: 'pages#about'
   get 'rules', to: 'pages#index', as: :rules
+  get 'about', to: 'pages#about', as: :about
 
   get 'journal', to: 'statuses#index', as: :journal
   get 'journal/:id/edit', to: 'statuses#edit', as: :journal_edit

@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
 
-
+gem 'pundit'
 
 
 # Use SCSS for stylesheets
@@ -17,6 +17,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'coffee-script-source', '1.8.0'
+
+
 
 group :development, :test do
   gem 'sqlite3'

@@ -33,6 +33,44 @@ body {
 }
 
 
+
+
+.Article a {
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+
+.Article .my-pre {
+    max-height: 200px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.4);
+    padding: 5px;
+}
+
+
+
+.Article a:hover {
+    color: grey;
+}
+
+.Article strong a {
+    font-size: 10pt;
+    background-color: rgba(205,205,255,0.9);
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px; 
+    border-radius: 2px; 
+}
+
+.Article strong a:hover {
+    background-color: rgba(105,105,155,0.9);
+    color: grey;
+}
+
+
 #Logo a {
     text-decoration: none;
     font-size: 64px;

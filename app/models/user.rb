@@ -1,4 +1,6 @@
+
 class User < ActiveRecord::Base
+    
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -19,7 +21,9 @@ class User < ActiveRecord::Base
     with: /\A[a-zA-Z\-\_]+\Z/, message: 'Must be formatted correctly.'
   }
   
-  
+  def clearance_levels
+    role.name
+  end 
   
   #Combine the first and last name to give a full name
   def full_name
