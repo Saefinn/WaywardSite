@@ -1,0 +1,29 @@
+<script>
+$(function() {
+    // Replace all textarea's
+    // with SCEditor
+    $("textarea").sceditor({
+        plugins: "bbcode",
+	style: "jquery.sceditor.default.min.css",
+    toolbar: "bold,italic,underline,strike|bulletlist,orderedlist,code,quote|image,link,unlink,maximize|left,center,right|color,cut,copy,paste,pastetext|source"
+    });
+});
+</script>
+
+
+<%= simple_form_for(@news) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :Title, placeholder: 'Your Title' %>
+
+    <%= f.input :Content, placeholder: 'Your Article' %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Post" %>
+  </div>
+<% end %>
+ 

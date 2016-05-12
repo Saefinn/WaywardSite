@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Latest News</h1>
+
+<div class="Article">
+<% @news.each do |news| %>
+    <%= time_ago_in_words(news.created_at) %> ago
+    <h2><%= link_to news.Title, news %> <strong><%= link_to 'X', news, method: :delete, data: { confirm: 'Are you sure you want to delete this article?' } %></strong></h2>
+    
+    <p class="my-pre"><%= news.Content.bbcode_to_html.html_safe%></p>
+        
+    <p><%= link_to 'Read More', news %></p>
+    <hr>
+<% end %>
+</div>
+
+
+ 
+        
+        
+
+
+
+
+<br>
+
+<br><div class="digg_pagination">
+<%= will_paginate @events %>
+    </div>
