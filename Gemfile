@@ -22,6 +22,7 @@ gem 'coffee-script-source', '1.8.0'
 gem 'rails_serve_static_files'
 
 
+
 group :development, :test do
   gem 'sqlite3'
 end
