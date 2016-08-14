@@ -28,7 +28,7 @@ group :production do
   gem "pg"
 end
 
-gem 'devise'
+gem 'devise', '~> 3.4.1'
 gem 'simple_form'
 gem 'haml', '~> 4.0.5'
 # Use jquery as the JavaScript library
