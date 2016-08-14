@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source', '1.8.0'
 
 gem 'rails_12factor'
-
+gem 'rails_serve_static_assets'
 
 
 group :development, :test do
