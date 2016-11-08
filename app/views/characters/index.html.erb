@@ -12,11 +12,11 @@
 
         <% @characters.each do |character| %>
            <li class="col span_1_of_3">
-                 <h4>
+                 <strong>
                   <%= link_to character.first_name + " " + character.last_name, character %>
-                 </h4>
+                 </strong>
                 <p>
-                  <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
+                  Author: <a href=<%=character.user.profile_name %>><%= character.user.profile_name %></a>
                 </p>
                 <% if current_user.present? %>
                     <% if character.user.profile_name == current_user.profile_name %>

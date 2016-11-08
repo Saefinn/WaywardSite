@@ -72,19 +72,17 @@
 
 
 <h3>Inventory</h3>
-<br />
 <section>
-  <ul id="item" class="section group">
+  <ul class="inventory">
     <%@items.each do |item| %>
 
-            <li class="col span_1_of_3">
-                <h5><%= link_to item.name, item_path(item) %></h5>
+            <li>
+                <strong><%= link_to item.name, item_path(item) %></strong>
                 
                   <% if current_user.present? %>
                     <% if item.character.user.profile_name == current_user.profile_name %>
                     <span class="admin">
-                        <%= link_to 'Edit', edit_item_path(item) %> |
-                        <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+                        (<%= link_to 'discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>)
                     </span>
                     <% else %>
           
@@ -93,9 +91,8 @@
                  <% end %>
     
                 <% if current_user.profile_name == "admin" %>
-                  <span class="admin">
-                    <%= link_to 'Edit', edit_item_path(item) %> |
-                    <%= link_to 'Discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  <span class="admin">                     
+                    (<%= link_to 'discard', item, method: :delete, data: { confirm: 'Are you sure?' } %>)
                   </span>
                     <% else %>
           

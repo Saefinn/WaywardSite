@@ -138,7 +138,7 @@ body {
 /*used for summaries - like for profiles */
 .text-summary {
 
-    height: 64px;
+    height: 65px;
     overflow: hidden;
 
 }
@@ -153,6 +153,13 @@ body {
 }
 
 
+.inventory {
+    list-style: none;
+    margin: 3px;
+    margin-left: 10px;
+    padding: 3px;
+    
+}
 
 /* An item box for display blocks of information */
 #item {
@@ -167,17 +174,11 @@ body {
 
 #item li {
 
-    width: 20%;
-    margin: 1%;
-
-
-    background-color: rgba(245,240, 240, 0.75);
-
-
-    border-radius: 10px;
-
+    width: 47.5%;
+    margin: 0.5%;
     padding: 10px 10px;
-
+    background-color: rgba(255,255,255, 0.75);
+    border-radius: 5px;
 
 
 }
@@ -185,6 +186,10 @@ body {
 #item li a {
     text-decoration: none;
     color: rgb(20,20,20);
+}
+
+#item li a:hover {
+    color: rgb(100,100,240);
 }
 
 
