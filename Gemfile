@@ -8,7 +8,7 @@ gem 'rails', '4.2.1'
 gem 'pundit', '~> 1.1.0'
 
 gem 'puma'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
