@@ -19,16 +19,16 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source', '1.8.0'
 
 
-gem 'rails_serve_static_assets'
+gem 'rails_serve_static_assets', '0.0.5'
 
 
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.10'
 end
 
 group :production do
-  gem "pg"
+  gem "pg", '0.18.1'
 end
 
 gem 'devise', '~> 3.4.1'
