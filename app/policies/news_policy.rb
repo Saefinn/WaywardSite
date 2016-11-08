@@ -1,5 +1,5 @@
 class NewsPolicy < ApplicationPolicy
-    attr_readr :user, :news
+    attr_reader :user, :news
     
     
     def initialize(user, post)
