@@ -1,33 +1,5 @@
 
 
-  
-  
-
-
-<% @sections.each do |sect| %>
-          <% if @found == false %>
-            <% if params[:section] == sect.title %>
-              <% @found = true %>
-            <% end %>
-          <% end %>
-          
-          
-<% end %>
-
-<% if @found == false %>
-  <h1>Select a Forum</h1>
-  
-  
-    <p><strong>Lastest Thread:</strong>
-      <%= link_to @posts_all.last.title, post_path(@posts_all.last.id) %> by <%= @posts_all.last.user.profile_name %> <%= time_ago_in_words(@posts_all.last.created_at) %> ago
-    <p>
-    
-    <p><strong>Latest Post</strong> in <%= link_to @comments.last.post.title, post_path(@comments.last.post.id) %> by <%= @comments.last.post.user.profile_name %> <%= time_ago_in_words(@comments.last.created_at) %> ago</p>
-
-
-<% end %>
-
-
 
 
 <% @sections.each do |sect| %>
