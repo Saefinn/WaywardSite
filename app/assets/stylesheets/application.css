@@ -532,11 +532,11 @@ input[type="submit"]:hover{
     border: 1px solid #000; }
 .digg_pagination a {
     text-decoration: none;
-    color: #000;
+    color: rgb(255,255,255);
     border: 1px solid #fff; }
 .digg_pagination a:hover, .digg_pagination a:focus {
-    color: #000033;
-    border-color: #000033; }
+    color: rgba(255,255,255,0.7);
+    border-color: rgba(255,255,255,0.7); }
 .digg_pagination .page_info {
     background: #2e6ab1;
     color: white;
