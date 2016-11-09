@@ -17,10 +17,10 @@
 
 $(document).on('page:change', function(){
     $(".journal").hover(function(){
-        $(this).css("background-color", "rgba(255,255,255,0.5");
+        //$(this).css("background-color", "rgba(255,255,255,0.5");
     },
     function(){
-        $(this).css("background-color", "white");
+        //$(this).css("background-color", "white");
     });
     
     

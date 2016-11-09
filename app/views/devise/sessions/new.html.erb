@@ -2,8 +2,9 @@
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "well"}) do |f| %>
   
 <h2>Log In!</h2>
-    
+  <h3>Email Address</h3>  
   <%= f.input :email %>
+  <h3>Password</h3>
   <%= f.input :password %>
 
   <% if devise_mapping.rememberable? -%>
