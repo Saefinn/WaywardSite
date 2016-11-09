@@ -332,22 +332,23 @@ textarea {
     width: 98%;
     max-width: 98%;
     min-height: 450px;
-    background-color: black;
+    background-color: rgba(255,255,255, 0.1);
     color: white;
+    border: none;
+    
 
     
 }
 
 select, input{
-    background-color: black;
+    background-color: rgba(255,255,255, 0.1);
     color: white;
-    border-color: white;
-    border: solid;
+    border: none;
     width: 200px;
     height: 40px;
     font-size: 1.750em;
     margin: 5px;
-    border-width: 2px;
+    
 }
 
 input[type="submit"] {
