@@ -6,7 +6,7 @@ class NewsController < ApplicationController
   # GET /news
   # GET /news.json
   def index
-    @news = News.paginate(:page => params[:page], :per_page => 10).order(created_at: :desc)
+      @news = News.paginate(:page => params[:page], :per_page => 10).order(created_at: :desc)
   end
 
   # GET /news/1
@@ -17,18 +17,32 @@ class NewsController < ApplicationController
 
   # GET /news/new
   def new
-    @news = News.new
+    if current_user.profile_name == "admin"
+      @news = News.new
+    else
+      render file: 'public/denied', status: 404, formats: [:html]
+    end
+    
   end
 
   # GET /news/1/edit
   def edit
+    if current_user.profile_name == "admin"
+    else
+      render file: 'public/denied', status: 404, formats: [:html]
+    end
   end
 
   # POST /news
   # POST /news.json
   def create
+    
+    
+    
     @news = News.new(news_params)
-
+    
+    
+    
     respond_to do |format|
       if @news.save
         format.html { redirect_to @news, notice: 'News was successfully created.' }
@@ -57,11 +71,17 @@ class NewsController < ApplicationController
   # DELETE /news/1
   # DELETE /news/1.json
   def destroy
-    @news.destroy
-    respond_to do |format|
-      format.html { redirect_to news_index_url, notice: 'News was successfully destroyed.' }
-      format.json { head :no_content }
+    
+    if current_user.profile_name == "admin"
+      @news.destroy
+      respond_to do |format|
+        format.html { redirect_to news_index_url, notice: 'News was successfully destroyed.' }
+        format.json { head :no_content }
+      end
+    else
+      render file: 'public/denied', status: 404, formats: [:html]
     end
+    
   end
 
   private

@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     resources :comments
   end
   
+  resources :users, path: :usersadmin
+  #only: [:show, :edit, :update]
   
   
 

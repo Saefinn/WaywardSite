@@ -1,0 +1,20 @@
+<h1>Edit User</h1>
+
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    
+    <p>Profile Name</p>
+    <%= f.input :profile_name, placeholder: 'Profile Name' %>
+    
+    <p>Rank</p>
+    <%= f.input :rank, placeholder: 'Rank' %>
+    
+
+  </div>
+
+  <div>
+    <%= f.button :submit %>
+  </div>
+<% end %>

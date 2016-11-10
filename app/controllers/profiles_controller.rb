@@ -1,4 +1,7 @@
 class ProfilesController < ApplicationController
+  
+  
+  
   def show
     #Find the user by using their profile name.
     @user = User.find_by_profile_name(params[:id])

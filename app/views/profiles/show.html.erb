@@ -1,6 +1,16 @@
 <div class="page-header">
   <h1><%= @user.profile_name %></h1>
   <h3>About Me</h3>
+  <p><strong>Rank: </strong><%= @user.rank %></p>
+  
+  
+<% if current_user.present? %>
+  <% if current_user.profile_name == "admin" %>
+    <a href= "<%= edit_user_path(@user.id) %>">Edit User's Profile</a>
+  <% end %>
+<% end %> 
+  <p></p>
+  
   <p class="my-pre"><%= @user.description %></p>
   <h3>Characters</h3>
   <p><%= @user.character_names %></p>

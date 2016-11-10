@@ -13,6 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* CSS LAYOUT
+ *
+ * CORE: Any Core HTML tags. This will apply first to all styles.
+ * GENERAL USE: Rules that can be applied to multiple situations. For example, if you want to indent something, you add "indent".
+ * MENUS: For Styling all menus in the sites. Which current are: Main, Secondary and Login
+ * ARTICLES: For Styling Articles, such as news, events and journals
+ * BODIES: Any misc styling that affect the content body of the site
+ * HEADERS: Anything that affects the headers of the site, so the logo, title, error/warning/status messages
+ * FOOTERS: Anything to style the bottom of the site
+ * PAGINATION: Anything to style the pagination controls of the site
+ * ITEM LISTS: Styling any lists of objects on the site, like the inventory
+ * FORMS: Rules for styling form elements in the site
+ * FORUMS: Styling specific to the site's forum
+ *
+ * /
+
+
+/* -----------*/
+/* CORE */
+/* -----------*/
+
+
 body {
 
     background-image: url("http://i.imgur.com/0GjU6l9.jpg");
@@ -37,104 +61,11 @@ a {
     color: rgb(205,205,255);
 }
 
-.Article a {
-    text-decoration: none;
-    color: white;
-    
-    
-}
 
 
-.Article .my-pre {
-    max-height: 200px;
-    overflow: hidden;
-    background-color: rgba(255,255,255,0.4);
-    padding: 5px;
-    
-}
-
-
-
-.Article a:hover {
-    color: grey;
-}
-
-.Article strong a {
-    font-size: 10pt;
-    background-color: rgba(255,255,255,0.9);
-    padding: 2px;
-    padding-left: 4px;
-    padding-right: 4px; 
-    border-radius: 2px; 
-}
-
-.Article strong a:hover {
-    background-color: rgba(155,155,155,0.9);
-    color: grey;
-}
-
-
-#Logo a {
-    text-decoration: none;
-    font-size: 64px;
-    color: rgb(240, 240, 240);
-    text-shadow:5px 5px 5px #000;
-
-}
-
-
-
-.alert {
-    margin-top: 10px;
-    background-color: rgba(0,0,0,0.6);
-    padding: 5px 0;
-    border-radius: 10px;
-    color: rgb(200, 200, 200);
-}
-
-.alert button {
-    background-color:transparent;
-    -moz-border-radius:39px;
-    -webkit-border-radius:39px;
-    border:none;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:13px;
-    padding:6px 10px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
-
-}
-
-/* page display */
-
-/* For displaying multi line content */
-.my-pre {
-    background: none;
-    border: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    white-space: pre-wrap;
-    
-    
-}
-
-/* Main body content */
-.main-text {
-    margin: auto;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    padding: 5px 15px 15px 15px;
-    color: white;
-    background-color: rgba(0,0,0,0.85);
-    width: 95%;
-    
-    
-}
-
-
-
+/*------------*/
+/* GENERAL USE */
+/*------------*/
 
 .indent {
     margin-left: 20px;
@@ -155,107 +86,6 @@ a {
 
 .lean-bottom {
     float: bottom;
-}
-
-
-.inventory {
-    list-style: none;
-    margin: 3px;
-    margin-left: 10px;
-    padding: 3px;
-    
-}
-
-/* An item box for display blocks of information */
-#item {
-    margin-top: 20px;
-
-    min-width: 100%;
-    padding: 0;
-    list-style: none;
-
-
-}
-
-#item li {
-
-    width: 47.5%;
-    margin: 0.5%;
-    padding: 10px 10px;
-    background-color: rgba(255,255,255, 0.10);
-    
-
-
-}
-
-#item li a {
-    text-decoration: none;
-    color: rgb(255,255,255);
-}
-
-#item li a:hover {
-    color: rgb(205,205,255);
-}
-
-
-.journal {
-    background-color: rgba(255,255,255, 0.1);
-    margin-bottom: 5px;
-    padding: 1%;
-    padding-top: 2px;
-}
-
-.journal:hover {
-    background-color: rgba(255,255,255, 0.2);
-}
-
-.journal h3 a {
-    text-decoration: none;
-
-}
-
-.journal h2 a {
-    text-decoration: none;
-    color: rgb(255,255,255);
-}
-
-
-
-
-.journal img {
-    float: left;
-    margin-top: 2%;
-    margin-right: 1%;
-}
-
-
-
-.thread {
-    background-color: rgba(255,255,255, 0.1);
-    margin-bottom: 5px;
-    padding: 1%;
-    padding-top: 2px;
-}
-
-.thread h3 a {
-    text-decoration: none;
-
-}
-
-
-
-
-.thread img {
-    display: block;
-}
-
-
-
-/*  SECTIONS  */
-.section {
-    clear: both;
-    padding: 0px;
-    margin: 0px;
 }
 
 /*  COLUMN SETUP  */
@@ -298,27 +128,9 @@ a {
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
-
-
-
-
-/*
-background-color: rgba(245,240,240, 0.75);
-max-width: 300px;
-
-padding: 15px;
-margin-left: 10px;
-border-radius: 10px;
-text-decoration: none;
-margin-top: 10px;
-*/
-
 .same-line {
     float: left;
 }
-
-
-
 
 .info-box {
     background-color: rgba(255,255,255, 0.1);
@@ -326,81 +138,14 @@ margin-top: 10px;
     margin-top: 20px;
 }
 
-/* Forms */
-
-textarea {
-    width: 98%;
-    max-width: 98%;
-    min-height: 450px;
-    background-color: rgba(255,255,255, 0.1);
-    color: white;
-    border: none;
-    
-
-    
-}
-
-select, input{
-    background-color: rgba(255,255,255, 0.1);
-    color: white;
-    border: none;
-    width: 200px;
-    height: 40px;
-    font-size: 1.750em;
-    margin: 5px;
-    
-}
-
-input[type="submit"] {
-    margin-top: 20px;
-    font-size: 1em;
-    height: 46px;
-    font-weight: 400;
-    padding: 15px 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-    color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.1);
-    border: none;
-    border-bottom: solid;
-    border-bottom-width: 5px;
-    margin-bottom: 30px;
-    width: 100%;
-    
-}
-
-input[type="submit"]:hover{
-    background-color: rgba(255,255,255,0.2);
-    border-bottom-color: rgb(205,205,205);
-}
 
 
-.post-box textarea{
-    min-height: 300px;
-}
+/* ---------- */
+/* MENUS */
+/* ---------- */
 
 
-
-
-/* Hide labels made by simple forms */
-.text label{
-    display: none;
-}
-
-.string label{
-     display: none;
- }
-
-.form-group label{
-    display: none;
-}
-
-
-
-
-
-/* MENU */
+/* MAIN MENU */
 #menu {
     text-align: center;
     padding: 10px 0;
@@ -477,7 +222,7 @@ input[type="submit"]:hover{
 }
 
 
-/* secondary menu */
+/* secondary menu - use for creating articles, events etc. */
 .secondary-menu {
     background: rgba(0,0,0,0);
     max-width: 50%;
@@ -511,6 +256,158 @@ input[type="submit"]:hover{
 .secondary-menu a:hover {
     color: rgba(255,255,255, 0.8);
 }
+
+
+
+
+
+/*-----------*/
+/* ARTICLES */
+/*----------*/
+
+.Article a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+
+.Article .my-pre {
+    max-height: 200px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.4);
+    padding: 5px;
+    
+}
+
+
+
+.Article a:hover {
+    color: grey;
+}
+
+.Article strong a {
+    font-size: 10pt;
+    background-color: rgba(255,255,255,0.9);
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px; 
+    border-radius: 2px; 
+}
+
+.Article strong a:hover {
+    background-color: rgba(155,155,155,0.9);
+    color: grey;
+}
+
+
+.my-pre {
+    background: none;
+    border: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre-wrap;
+    
+    
+}
+
+.main-text {
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 5px 15px 15px 15px;
+    color: white;
+    background-color: rgba(0,0,0,0.85);
+    width: 95%;
+    
+    
+}
+
+.journal {
+    background-color: rgba(255,255,255, 0.1);
+    margin-bottom: 5px;
+    padding: 1%;
+    padding-top: 2px;
+}
+
+.journal:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.journal h3 a {
+    text-decoration: none;
+
+}
+
+.journal h2 a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+
+
+
+.journal img {
+    float: left;
+    margin-top: 2%;
+    margin-right: 1%;
+}
+
+
+/*----------*/
+/* BODIES */
+/*----------*/
+
+
+
+/*----------*/
+/* HEADERS */
+/*----------*/
+
+#Logo a {
+    text-decoration: none;
+    font-size: 64px;
+    color: rgb(240, 240, 240);
+    text-shadow:5px 5px 5px #000;
+
+}
+
+
+
+.alert {
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px 0;
+    border-radius: 10px;
+    color: rgb(200, 200, 200);
+}
+
+.alert button {
+    background-color:transparent;
+    -moz-border-radius:39px;
+    -webkit-border-radius:39px;
+    border:none;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 10px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+
+}
+
+
+
+
+/*----------*/
+/* FOOTERS */
+/*----------*/
+
+/*----------*/
+/* PAGINATION */
+/*----------*/
 
 
 .digg_pagination {
@@ -559,4 +456,171 @@ input[type="submit"]:hover{
     height: 1%; }
 *:first-child + html .digg_pagination {
     overflow: hidden; }
+
+
+/*----------*/
+/* ITEM LISTS */
+/*---------*/
+
+.inventory {
+    list-style: none;
+    margin: 3px;
+    margin-left: 10px;
+    padding: 3px;
+    
+}
+
+/* An item box for display blocks of information */
+#item {
+    margin-top: 20px;
+
+    min-width: 100%;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+#item li {
+
+    width: 47.5%;
+    margin: 0.5%;
+    padding: 10px 10px;
+    background-color: rgba(255,255,255, 0.10);
+    
+
+
+}
+
+#item li a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+#item li a:hover {
+    color: rgb(205,205,255);
+}
+
+/*----------*/
+/* FORMS */
+/*----------*/
+
+textarea {
+    width: 98%;
+    max-width: 98%;
+    min-height: 450px;
+    background-color: rgba(255,255,255, 0.1);
+    color: white;
+    border: none;
+    
+
+    
+}
+
+select, input{
+    background-color: rgba(255,255,255, 0.1);
+    color: white;
+    border: none;
+    width: 200px;
+    height: 40px;
+    font-size: 1.750em;
+    margin: 5px;
+    
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    font-size: 1em;
+    height: 46px;
+    font-weight: 400;
+    padding: 15px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-bottom: solid;
+    border-bottom-width: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(255,255,255,0.2);
+    border-bottom-color: rgb(205,205,205);
+}
+
+
+.post-box textarea{
+    min-height: 300px;
+}
+
+
+
+
+/* Hide labels made by simple forms */
+.text label{
+    display: none;
+}
+
+.string label{
+     display: none;
+ }
+
+.form-group label{
+    display: none;
+}
+
+/*------------*/
+/* FORUMS*/
+/* ----------*/
+.thread {
+    background-color: rgba(255,255,255, 0.1);
+    margin-bottom: 5px;
+    padding: 1%;
+    padding-top: 2px;
+}
+
+.thread h3 a {
+    text-decoration: none;
+
+}
+
+
+
+
+.thread img {
+    display: block;
+}
+
+
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+/*
+background-color: rgba(245,240,240, 0.75);
+max-width: 300px;
+
+padding: 15px;
+margin-left: 10px;
+border-radius: 10px;
+text-decoration: none;
+margin-top: 10px;
+*/
+
+
+
 
