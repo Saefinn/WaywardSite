@@ -307,8 +307,11 @@ a {
     border: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     white-space: pre-wrap;
-    
-    
+}
+
+.thread span {
+    display: block;
+    white-space: pre-wrap;
 }
 
 .main-text {
@@ -517,6 +520,13 @@ textarea {
     
 }
 
+.bbcode li {
+    list-style: none;
+    float: left;
+    margin: 4px;
+}
+
+
 select, input{
     background-color: rgba(255,255,255, 0.1);
     color: white;
@@ -527,6 +537,11 @@ select, input{
     margin: 5px;
     
 }
+
+select:focus {
+    background-color: black;
+}
+
 
 input[type="submit"] {
     margin-top: 20px;
@@ -605,8 +620,32 @@ input[type="submit"]:hover{
 }
 
 
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
 
 
+
+/*
+Homepage
+Documentation
+Examples
+Downloads
+Download the latest
+markItUp! pack 1.1.14
+Feb, 04 2013 markItUp! pack 1.1.14
+Download now!
+Fork the code on Github.
+Last commit: 2015-10-28
+Sponsors
+Buy me a beer!
+Support the project! Making a donation will motivate me to keep this project going and allow for further development.
+Amount	
+	Cheers!
+© markItUp! and Jay Salvat
+
+*/
 
 
 

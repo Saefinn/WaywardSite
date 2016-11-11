@@ -1,17 +1,5 @@
 
 
-<script>
-$(function() {
-    // Replace all textarea's
-    // with SCEditor
-    $("textarea").sceditor({
-        plugins: "bbcode",
-	style: "jquery.sceditor.default.min.css",
-    toolbar: "bold,italic,underline,strike|bulletlist,orderedlist,code,quote|image,link,unlink,maximize|left,center,right|color,cut,copy,paste,pastetext|source"
-    });
-});
-</script>
-
 
 <%= simple_form_for(@post) do |f| %>
   <%= f.input :section, collection: Section.all, value_method: :title, label_method: :title, prompt: "Select a Forum Section" %>
