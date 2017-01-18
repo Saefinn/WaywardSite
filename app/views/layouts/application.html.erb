@@ -5,6 +5,7 @@
   <!-- Link all necessary Javascripts and Stylesheets and meta tags -->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:700italic,400,700,800|Changa+One:400,400italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Pirata+One" rel="stylesheet">
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
@@ -14,8 +15,10 @@
 
 
 
-<div id="Logo"><h1><%= link_to "Wayward Star", root_path %></h1></div>
-
+<div id="logo"><h1></h1></div>
+    <div id="logo"><h1><%= link_to "Pirates of a Wayward Star", root_path %></h1>
+      <h3>A RolePlaying Free Company</h3>
+    </div>    
 
 <div id="login-bar">
   <% if user_signed_in? %>
@@ -29,20 +32,20 @@
 
 <br/>
 
-<div id="menu">
-       <ul>
-        <!-- This will link to all of the posts using a Rails path -->
+<div id="navigation">
+    <img src="http://i.imgur.com/GbPn1Oq.png"></img>
+    <div id="links">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "News", news_index_path %></li>
         <li><%= link_to "Battle System", rules_path %></li>
         <li><%= link_to "Members", user_list_path %></li>
-        <li><%= link_to "Characters", characters_path %></li>
+        <li><%= link_to "The Crew", characters_path %></li>
         <li><%= link_to "Journals",feed_path %></li>
         <li><%= link_to "Items", items_path %></li>
         <li id="events"><%= link_to "Events", events_path %></li>
         <li><%= link_to "Forum", posts_path %></li>
 
-      </ul>
+    </div>
 </div>
 
 
@@ -71,7 +74,7 @@
       </div>
     <% end %>
     
-    <div class="main-text">
+    <div class="page-body">
     
   <!--This is the actual page content -->
         <%= yield %>

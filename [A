@@ -1,0 +1,613 @@
+[33mcommit 79ff3ead44b6816a4085400ae4a81dde159f3747[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Fri Nov 11 13:27:15 2016 +0000
+
+    Whoops, forgot to add the plugin to the last commit.
+
+[33mcommit 6ebe0122e860310f724a3d3f37cb2b058711cb75[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Fri Nov 11 13:09:50 2016 +0000
+
+    Gemfile updated
+
+[33mcommit 98573133f357b365e230940f5f88261e8da58fb0[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Fri Nov 11 13:09:14 2016 +0000
+
+    Added a new text editor for BBCode and fixed some post CSS issues, where added a tag could mean it doesn't go to the next line.
+
+[33mcommit a544033b08a536aab5b3ce8c0b93f8e8030c15bb[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Thu Nov 10 14:52:11 2016 +0000
+
+    Once again this plonker forget to update the gemfile.
+
+[33mcommit e3a845abd75c7fd02bcdd2b5a763f4ba2dd03f19[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Thu Nov 10 14:49:59 2016 +0000
+
+    Tidied up CSS code, added new migration for users database to include rank. Also added controllers and views so that the admin can modify the rank of a user.
+
+[33mcommit f64d3bf8d210a272f89533f5d99e0ed79241755d[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 14:33:52 2016 +0000
+
+    updated gemfile
+
+[33mcommit 9f240a30743946b1082db19016a90ffeb14eb448[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 14:33:19 2016 +0000
+
+    Added rules to the front page.
+
+[33mcommit 78a6ab1a3e964ad9b151a6b506c466773094bd11[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 13:38:10 2016 +0000
+
+    whoops, forgot to update the gemfile. As my PC doesn't like 'puma' I have to turn it off in development.
+
+[33mcommit bf6f92d04b2e0d137dc8b3059bc73b2d46bad476[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 13:36:55 2016 +0000
+
+    The text boxes looked awful. Brought their style up with the rest of the site's design.
+
+[33mcommit d79bd57172683d1966e6afca888ad0e6748623ec[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 12:57:12 2016 +0000
+
+    forgot to update pagination controls with CSS rules
+
+[33mcommit e72b4d3bef5d6722a07f6b351cf14755b4454f6d[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 12:52:50 2016 +0000
+
+    forgot to update gemfile. Now updated
+
+[33mcommit c5499323aab2f1f5df44d66a785e182ac3715152[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Nov 9 12:52:13 2016 +0000
+
+    Updated the CSS rules to improve the overall appearance of the site. It still needs work as the CSS code is a mess, however, that is up next.
+
+[33mcommit e91f5e0ab629635353d8ba80f7b0a0993407794a[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 18:44:00 2016 +0000
+
+    added puma again, was removed during testing.
+
+[33mcommit d286e666d175408cd225828115fb2b7fc4b0f5e1[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 18:41:51 2016 +0000
+
+    Fixed a few CSS and backend issues. Mainly with how items are displayed.
+
+[33mcommit 5ad50d047b8ba26c24d96e41f655e51705f5f333[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 16:31:53 2016 +0000
+
+    Corrected NewsPolicy
+
+[33mcommit b43131c7da91d9bfdd2878ab2bd4bbdfb05a16ae[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 16:22:01 2016 +0000
+
+    Added production to rails 12 factor
+
+[33mcommit dd64448dd95e233c9e8819d8174e7cc30f279c91[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 16:17:52 2016 +0000
+
+    Added rails 12 factor
+
+[33mcommit cc1d694a464b0555ef005d84b0ae9e7b77472772[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 16:15:09 2016 +0000
+
+    Forgot to add the previous new files to git
+
+[33mcommit a86387055b6577eacc50d389ce9aa9a05112a2ba[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 16:13:03 2016 +0000
+
+    Made some gems more specific & added a puma profile
+
+[33mcommit 18fd0f9901845245f3fab36af7de679933343114[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 15:57:33 2016 +0000
+
+    updated to try and use the old gemfile, when the site worked
+
+[33mcommit 867763c1aebe9b9b7cde74c81874ef240fa35319[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Nov 8 15:43:39 2016 +0000
+
+    Removed Last Post and Last Thread from forum as they're broken.
+
+[33mcommit 75a831e46c0def56ae9b9b49c279471e0a55180a[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 16:07:23 2016 +0100
+
+    debugging gemfile.lock by removing x86 mingw32
+
+[33mcommit 086ca6fa4bef416958107d42a7268cb01bc36a35[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 16:06:50 2016 +0100
+
+    debugging gemfile.lock by removing x86 mingw32
+
+[33mcommit f7c3d5e4f90f01ee534a6bd72e0830712a8814b5[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:58:03 2016 +0100
+
+    updated version in gemfile
+
+[33mcommit b2b719f5885374e009e6565c30b1acb95d806fb0[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:52:38 2016 +0100
+
+    debugging heroku deplayment
+
+[33mcommit 0c0761813dcd6ac3adef6f95068f7e91dd25fe65[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:51:04 2016 +0100
+
+    more debugging
+
+[33mcommit 22fd29b3ffabc6b890765b5a22249840ca5fdd92[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:46:21 2016 +0100
+
+    removed 12factor
+
+[33mcommit 18535c9fd0b2a9d8875ec068f38afc9a786e14ab[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:42:27 2016 +0100
+
+    updated serve static command to update 'asset' to 'files' for updated command.
+
+[33mcommit add0f9d5a8f140e334c5bacfafdeef99c8c0164c[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:39:03 2016 +0100
+
+    added rails factor for heroku's recommended injections
+
+[33mcommit e8706863043479fc13107cd146922af51652f1f3[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:34:02 2016 +0100
+
+    Added Ruby version for heroku server
+
+[33mcommit babdf294f51c7b3fccd62ae2a0b2a673b6cbf0a8[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Aug 14 15:16:23 2016 +0100
+
+    Set devise to 3.4.1 for heroku requirment (debugging)
+
+[33mcommit 1f9cb977a9b0dbe20a1742b24df525db637266d0[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Thu May 12 23:53:05 2016 +0100
+
+    Fixed a few issues and updated a couple of pages
+
+[33mcommit bb1cbfb0485181282068975cb3ce6f6d7a5bffdf[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jan 24 15:21:03 2016 +0000
+
+    Added more pages and news. Prepared for adding pundit authorisation
+
+[33mcommit 1cff797d1ae77502027049e3bdb54d32811e8ea0[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Dec 13 20:22:58 2015 +0000
+
+    Fixed the log in page. And changed order of events.
+
+[33mcommit cdbcb61c36abb4be27596645b18e190afed3c2c6[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Dec 7 23:03:41 2015 +0000
+
+    Fixed bug on the JavaScript and CSS where the highlight colour was sticking
+
+[33mcommit 9249bcef4e5b13806f2dd600087d5499acd144b0[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 14 19:36:41 2015 +0100
+
+    added an editor to any bbcode post data
+
+[33mcommit f58d2210c81597af7298bf9322fa46736b15cf41[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 14 16:31:09 2015 +0100
+
+    Fixed a problem with comment code appearing when it shouldn't
+
+[33mcommit 6ebe9ea41d77acc2de1bf9bdd2d1dfcff96e4a63[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 14 15:44:49 2015 +0100
+
+    Added jquery to show selections. Added latest threads and posts
+
+[33mcommit 5ec5c0aaf7eff308d24634c687d14fd2cb4dc56f[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 14 12:38:45 2015 +0100
+
+    Added Forum Sections
+
+[33mcommit ebd822e74b4e88c4a75733fa9142a576e005c0f4[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Jun 8 21:15:56 2015 +0100
+
+    Updated migration. Removed drop table for deploy
+
+[33mcommit c3cc9c31bd774942769a533769b02d9b5606ea22[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Jun 8 21:00:18 2015 +0100
+
+    Tidy up of authentication and finale of forum
+
+[33mcommit e6f3228cb720a653637abb80e82ebd61301e86b6[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Jun 8 19:46:25 2015 +0100
+
+    Added basic forum features prior to clean up
+
+[33mcommit 6ee1d8b51798dba57fe158797eeec5e38ac91c9a[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 7 16:45:16 2015 +0100
+
+    added posts model and controller
+
+[33mcommit 5b13d0869ea7ed5e22a355aa47f5e1a11b4e6cbd[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Jun 7 14:35:24 2015 +0100
+
+    Final Commit before new 'forum' branch
+
+[33mcommit f7fab5a7bbfdba1d06148d1b05c49a38bea4993c[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 31 22:29:17 2015 +0100
+
+    Changed required to gem on BB parser
+
+[33mcommit 6d8bd204e7c2c7218a33a4219d2b88a195ab173d[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 31 22:22:31 2015 +0100
+
+    Added Events and a BBCode Parser
+
+[33mcommit f2d04f926ad1451b5d2a797eddc977c17ab5cd30[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon May 25 20:32:09 2015 +0100
+
+    Added pagination and fixed a couple of CSS bugs
+
+[33mcommit 03d3f6ea7252368693070f0bb8c94df4a50831b4[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon May 25 14:53:13 2015 +0100
+
+    Updated the css styling with customer styling and removed bootstrap.
+
+[33mcommit b6039186fce9348e1319ce9d85e9048fc7713cff[m
+Author: Saefinn <bryn.s.price@gmail.com>
+Date:   Sun May 17 14:50:17 2015 +0100
+
+    Update README.md
+    
+    Updated formatting of README
+
+[33mcommit 4bcc2eaf0bd66e56116b567e610f44879da3d045[m
+Author: Saefinn <bryn.s.price@gmail.com>
+Date:   Sun May 17 14:36:23 2015 +0100
+
+    Update and rename README.rdoc to README.md
+    
+    Updated the readme with new installation instructions and turning from using rdoc to md
+
+[33mcommit 5840f021ddc27917aa98fdb70202833baabe817d[m
+Author: Bryn Price <bryn.price@live.co.uk>
+Date:   Sun May 17 13:09:02 2015 +0100
+
+    Updated gem file to force the coffee script version and updated readme
+
+[33mcommit faeab5973859ef3f3edbc5066c19a0eb6b409be3[m
+Merge: 3c922f7 ff9035f
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed May 13 16:48:25 2015 +0100
+
+    Merge branch 'master' of https://github.com/Saefinn/WaywardStarSite
+    
+    Conflicts:
+    	README.rdoc
+
+[33mcommit 3c922f7dcb0ce88147f259cc618247628d5fa945[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed May 13 16:39:26 2015 +0100
+
+    Updated some of the commenting on files for layouts.
+
+[33mcommit ff9035f818d4baa3e4fafc532ce9aa2329af56b6[m
+Author: Saefinn <bryn.s.price@gmail.com>
+Date:   Wed May 13 15:27:45 2015 +0100
+
+    Update README.rdoc
+
+[33mcommit 3dee9576a5be5af43c9246538a3aa0e22ea428db[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed May 13 15:20:39 2015 +0100
+
+    Updated .gitignore to ignore RubyMine project files. Updated Readme with project information. Fixed problem in migrations that will prevent a successful clone.
+
+[33mcommit a66abe886ee28dd056b76ab1e8d2f8e3d7333a8b[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 10 16:38:57 2015 +0100
+
+    updated rules based on suggestions
+
+[33mcommit 8bf969c8cb9ee1ff5b1080d23a1877009155f14e[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 10 15:58:54 2015 +0100
+
+    temporary fix for UI issue on item boxes
+
+[33mcommit b0f54a14381aa5254eb77c56a24fd27a95910162[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 10 15:52:47 2015 +0100
+
+    Tidied up the styling of several pages and kept things consistent. Also added a 'rules' page
+
+[33mcommit 62fcca537fa30cb3bc4fec5a2ef3bf8f5442da31[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat May 9 22:37:05 2015 +0100
+
+    fixed bug stopping migration
+
+[33mcommit 64ae7af1041062b9d8eda4376cb9b4a7a99df9c5[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat May 9 22:00:51 2015 +0100
+
+    Added Items to characters and introduced a user bar
+
+[33mcommit 8184b19f32668494d6a0ee321c2f8b7ba72c5250[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue May 5 22:48:26 2015 +0100
+
+    Character bug fixed - reverting changes to avoid security risk
+
+[33mcommit 24a80ae46ea5bd42bbcd8102c3e017589ce30a01[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue May 5 22:41:29 2015 +0100
+
+    Attempted Database Bug Fix - attempt 2 - added a 'delete' option so I can remove dodgy entries
+
+[33mcommit e43e6a2602749caed8213399d248134b1b3d6e25[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue May 5 22:34:27 2015 +0100
+
+    Attempted Database Bug Fix
+
+[33mcommit bc8bdc84d5550fe9f1a5aa3c785615c0be4cbb5a[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue May 5 22:22:01 2015 +0100
+
+    Updated Members Pages. Setup the characters controllers, models and views and assigned to users.
+
+[33mcommit 2e5fda0a7b4969c7342edc4c97351d3e7ed38057[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue May 5 21:04:59 2015 +0100
+
+    Updated with a RubyMine Project
+
+[33mcommit 66c5b9031df6e3ff0458051c505ca55da2a2f483[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon May 4 22:14:53 2015 +0100
+
+    Removed characters from menu - don't need it yet on deploy.
+
+[33mcommit 616598c68b30307a81ca180d039a06f229798864[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon May 4 19:03:39 2015 +0100
+
+    attempted Rake bug fix
+
+[33mcommit 50cceabc70a75ba2453bd56ba96535615788b992[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon May 4 18:50:57 2015 +0100
+
+    Added Scaffolding for Characters
+
+[33mcommit ef87aa0782f21219cf0214a0561defadc1d54d24[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun May 3 17:35:20 2015 +0100
+
+    minor tweaks before creating new branch. Keeping master version up to date for release.
+
+[33mcommit 55c444794585439bf189b5db0e410e51c8f5794f[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat May 2 12:43:12 2015 +0100
+
+    updated post text box as it was too small for a post
+
+[33mcommit b6c29c6ac2d9851ce5609a572446632a5a798b61[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat May 2 12:35:41 2015 +0100
+
+    Updated text boxes for entering multi line data and updated routes for journals for consistancy.
+
+[33mcommit 658bc0ed5dbf92162bb793f894fd178ac0c439a7[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat May 2 11:14:41 2015 +0100
+
+    Fixed a security flaw in editing people's posts.
+
+[33mcommit 136c12a61419887dee7fcabbd42779c94f213a82[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Apr 26 18:59:12 2015 +0100
+
+    added user list.
+
+[33mcommit d763b4e3f7afe5d363af467952f64ae760ed1c70[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Apr 26 15:23:03 2015 +0100
+
+    Fixed user issues when creating statuses. Users cannot edit or delete each other's statuses. Should be more secure now.
+
+[33mcommit e768e07144e1a3cc12041ce6e1727a312979c87a[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Apr 26 13:44:22 2015 +0100
+
+    I have replaced the background image url so it works in deployment
+
+[33mcommit f014b8fb097f6f79ff13478ac6baf8703e798fde[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sun Apr 26 13:31:56 2015 +0100
+
+    I have updated the CSS styles and fixed issues with Pre tags.
+
+[33mcommit c302a5487dcd0be4042e2d920e1cb749c6d7492b[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat Apr 25 21:48:21 2015 +0100
+
+    Updated Journals with titles and reformatted the journals pages
+
+[33mcommit 6d70c371bb8f2a008bae435b05b9d1171ca2772c[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat Apr 25 20:06:43 2015 +0100
+
+    Attempted to fix bug
+
+[33mcommit 3a48f559b63506a3938c61de40130ccd272b6c55[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat Apr 25 19:41:22 2015 +0100
+
+    updated with new registration criteria
+
+[33mcommit 64955fd3cad5c30e67d76f1bf57c5d19d3660db3[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Sat Apr 25 00:04:39 2015 +0100
+
+    Updated with new profile critera (description & characters), renamed a few bits & pieces to fit and added info to profile page
+
+[33mcommit 4efd82382b2556527c9f9ad54a6f8907d173a518[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 23:52:26 2015 +0100
+
+    Updated the gemfile.lock
+
+[33mcommit dee332a9779682709414b90ff7621fa4c9ffac58[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 23:50:44 2015 +0100
+
+    added PG to production
+
+[33mcommit 0ff6fa38a941f5e5c300ba389abb20bf1ccfa874[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 23:46:24 2015 +0100
+
+    Moved SQLite 3 to test/dev environment
+
+[33mcommit 9d720f04949087c39722afbfffeb15928fe70686[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 23:29:55 2015 +0100
+
+    Updated for Heroku Deploy
+
+[33mcommit 50f9cf5c3c070431063375ac3dcf9a52b82f7044[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 23:10:53 2015 +0100
+
+    Added Gravatars
+
+[33mcommit 93350afa098eb801b2b898b65ca482eeaa11d4f7[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 22:53:34 2015 +0100
+
+    Updated profile page and scoped posts
+
+[33mcommit 8c17f491ce2ed1dba58db09d7db227b34079d9b4[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Wed Apr 22 19:40:51 2015 +0100
+
+    Generated Profile Controller
+
+[33mcommit 30183aa1dde592402f571ee30d341fadc11b473b[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 20:41:22 2015 +0100
+
+    Updated authentication for posts
+
+[33mcommit 75c4b39e7238e5d10fdd5384b182275017042887[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 16:03:54 2015 +0100
+
+    Added customer routes for auth and feed
+
+[33mcommit f9345026736b86bef79c16fda3c534b2bd1338f9[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 15:38:09 2015 +0100
+
+    Styled the flash messages
+
+[33mcommit 611abd563d881ee2ac5cc31bb9f6a4243e617e7e[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 14:41:56 2015 +0100
+
+    Updated with Validation on sign up and added tests for username, lastname and profile correctness
+
+[33mcommit be2c666eb3c8506ab23fe6e322008176771ab0a4[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 12:38:11 2015 +0100
+
+    Added comments to the main code
+
+[33mcommit e9f3a5042a104b846d1737930733ae3c9e0d485f[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 12:17:55 2015 +0100
+
+    Merged Core and Authentication
+
+[33mcommit 48f53e829fa6bf36f30014564f1ad9cecd28fa72[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Tue Apr 21 12:13:36 2015 +0100
+
+    Fixed bug ready for merge
+
+[33mcommit 8b7ff2198d28283510f15316d5551dcf052daed1[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Apr 20 23:56:01 2015 +0100
+
+    Updated styles for signing in form
+
+[33mcommit 86e59ba87dc2fb2557f5eadca765143ffaa3877d[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Apr 20 23:37:14 2015 +0100
+
+    Issue with adding names fixed.
+
+[33mcommit f87de6c8c963d97fcf04069f2bd334c07411a44e[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Apr 20 20:52:35 2015 +0100
+
+    Updated with profiles (first_name, last_name, profile_name)
+
+[33mcommit 5cf5e5d794b413ededead025eeb433b34f4b4c6e[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Apr 20 17:41:59 2015 +0100
+
+    Added user Authenticationand installed devise
+
+[33mcommit 71c8dc27da98f4dd161f96d15b7c6055e7bf250f[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Mon Apr 20 16:20:32 2015 +0100
+
+    Added Bootstrap and styled posts
+
+[33mcommit 5691b618d304d285494d1fb017c414d9b359914e[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Thu Apr 16 11:59:03 2015 +0100
+
+    This is updating with the status scaffolding
+
+[33mcommit 56a9adf210ec7f0c7e25b30e0f1d11b88e0e9348[m
+Author: Saefinn <bryn.s.price@live.co.uk>
+Date:   Thu Apr 16 11:54:27 2015 +0100
+
+    This is the original project installation

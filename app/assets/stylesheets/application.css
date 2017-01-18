@@ -15,6 +15,12 @@
  */
 
 
+
+
+
+
+
+
 /* CSS LAYOUT
  *
  * CORE: Any Core HTML tags. This will apply first to all styles.
@@ -39,6 +45,11 @@
 
 body {
 
+
+    font-family: 'Montserrat', sans-serif;
+    width: 1500px;
+    margin: auto;
+/*
     background-image: url("http://i.imgur.com/0GjU6l9.jpg");
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -51,20 +62,18 @@ body {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
-
-
+*/
 
 }
 
-
 a {
-    color: rgb(205,205,255);
+    color: rgb(5,5,5);
 }
 
 
 
 /*------------*/
-/* GENERAL USE */
+/* GENERAL RULES */
 /*------------*/
 
 .indent {
@@ -174,7 +183,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
     background-color: black;
     border-bottom: solid;
     border-bottom-width: 5px;
@@ -184,7 +193,7 @@ a {
 }
 
 #menu a:hover {
-    color: rgb(205,205,205);
+    color: rgb(105,105,105);
     border-bottom-color: rgb(205, 205,255);
 }
 
@@ -196,6 +205,8 @@ a {
     font-size: 15px;
     text-align: center;
     margin-top: 5px;
+    
+    
 
 }
 
@@ -213,12 +224,12 @@ a {
 #login-bar a {
     padding: 15px 10px;
     text-decoration: none;
-    color: rgb(150,150,150);
+    color: rgb(255,255,255);
 
 }
 
 #login-bar a:hover {
-    color: rgb(205,205,205);
+    color: rgb(105,105,105);
 }
 
 
@@ -254,7 +265,7 @@ a {
 }
 
 .secondary-menu a:hover {
-    color: rgba(255,255,255, 0.8);
+    color: rgba(55,55,55, 0.8);
 }
 
 
@@ -267,7 +278,7 @@ a {
 
 .Article a {
     text-decoration: none;
-    color: white;
+    color: black;
     
     
 }
@@ -319,7 +330,7 @@ a {
     margin-top: 25px;
     margin-bottom: 10px;
     padding: 5px 15px 15px 15px;
-    color: white;
+    color: black;
     background-color: rgba(0,0,0,0.85);
     width: 95%;
     
@@ -344,7 +355,7 @@ a {
 
 .journal h2 a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 
@@ -370,7 +381,7 @@ a {
 #Logo a {
     text-decoration: none;
     font-size: 64px;
-    color: rgb(240, 240, 240);
+    color: rgb(140, 140, 140);
     text-shadow:5px 5px 5px #000;
 
 }
@@ -429,18 +440,18 @@ a {
     font-style: normal;
     font-weight: bold;
     background: #000;
-    color: white;
+    color: black;
     border: 1px solid #000; }
 .digg_pagination a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(155,155,155);
     border: 1px solid #fff; }
 .digg_pagination a:hover, .digg_pagination a:focus {
     color: rgba(255,255,255,0.7);
     border-color: rgba(255,255,255,0.7); }
 .digg_pagination .page_info {
     background: #2e6ab1;
-    color: white;
+    color: black;
     padding: 0.4em 0.6em;
     width: 22em;
     margin-bottom: 0.3em;
@@ -497,11 +508,11 @@ a {
 
 #item li a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(0,0,0);
 }
 
 #item li a:hover {
-    color: rgb(205,205,255);
+    color: rgb(105,105,155);
 }
 
 /*----------*/
@@ -513,8 +524,8 @@ textarea {
     max-width: 98%;
     min-height: 450px;
     background-color: rgba(255,255,255, 0.1);
-    color: white;
-    border: none;
+    color: black;
+    
     
 
     
@@ -529,8 +540,8 @@ textarea {
 
 select, input{
     background-color: rgba(255,255,255, 0.1);
-    color: white;
-    border: none;
+    color: black;
+    
     width: 200px;
     height: 40px;
     font-size: 1.750em;
@@ -552,8 +563,8 @@ input[type="submit"] {
     padding-left: 20px;
     padding-right: 20px;
     text-decoration: none;
-    color: rgb(255,255,255);
-    background-color: rgba(255,255,255,0.1);
+    color: rgb(0,0,0);
+    background-color: rgba(235,235,235,1);
     border: none;
     border-bottom: solid;
     border-bottom-width: 5px;
@@ -563,7 +574,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover{
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(245,245,245,1);
     border-bottom-color: rgb(205,205,205);
 }
 
@@ -659,6 +670,200 @@ border-radius: 10px;
 text-decoration: none;
 margin-top: 10px;
 */
+.page-body {
+    color: black;
+    width: 900px;
+    background-color: white;
+    margin: auto;
+}
+
+
+
+/* NEW CSS FOR SITE */
+
+.content h2 {
+  font-family: 'Pirata One', Cursive;
+  text-align: center;
+  font-size: 4em;
+}
+
+
+.top-bar img {
+  display: block;
+  width: 100px;
+}
+
+.bar-menu {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 250px;
+  
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.top-bar a:hover {
+  color: #666;
+}
+
+
+
+.top-bar li {
+  float: left;
+  list-style: none;
+  text-align: center;
+}
+
+
+.content h3 {
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Pirata One', Cursive;
+  margin-bottom: 0px;
+}
+
+.content h4 {
+  font-size: 1.5em;
+  margin-top: 0px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.content p {
+  margin-left: 20px;
+}
+
+
+#navigation img{
+  
+  width: 128px;
+  
+}
+
+
+#navigation {
+  width: 240px;
+  text-align: center;
+  float: left;
+  margin: auto;
+  margin-top: 100px;
+  position: fixed;
+  z-index: 1000; 
+
+  
+}
+
+#links {
+  overflow-y: scroll; overflow-x:hidden;
+  height: 550px;
+}
+
+#links::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+#links::-webkit-scrollbar-track {
+    
+}
+ 
+#links::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+
+
+#navigation li {
+  list-style: none;
+  margin: 0.2%;
+  font-family: 'Pirata One', Cursive;
+  font-size: 1.2em;
+}
+
+#navigation li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 2.5em;
+ 
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+  height: 100%;
+  
+  border-radius: 2px;
+}
+
+#navigation li a:hover{
+  
+  color: #666;
+}
+
+
+
+
+.page-body {
+    margin-top: 200px;
+}
+
+/* ########################### */
+/* ########################### */
+/* !!!!!NEW CSS LAYOUT!!!! */
+/* ########################### */
+/* ########################### */
+
+/* ############################ */
+/* !!!!!!!SHARED!!!!!!!!!!!!!!! */
+/* ############################ */
+
+/* #####################
+/* LOGO - TOP OF PAGE */
+
+#logo {
+  
+  
+  position: fixed;
+  
+  text-align: center;
+  margin: auto;
+  margin-left: 150px;
+  background-color: white;
+  margin-top: -40px;
+  width: 1100px;  
+}
+
+#logo a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: #666;
+}
+
+
+#logo h1 {
+  width: 100%;
+  font-family: 'Pirata One', Cursive;
+  font-size: 4em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+#logo h3 {
+  font-size: 2em;
+  font-family: 'Pirata One', Cursive;
+  margin-top: 0px;
+  text-align: center;
+  
+}
+
+
 
 
 
