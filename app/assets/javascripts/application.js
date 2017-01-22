@@ -60,3 +60,7 @@ mySettings = {
 $(document).on('page:change', function() {
    $("textarea").markItUp(mySettings);
 });
+
+
+
+

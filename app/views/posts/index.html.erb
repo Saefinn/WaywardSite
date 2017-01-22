@@ -7,9 +7,9 @@
           
             
           <% if @found == false %>
-                <div class="journal">
+                <div class="section">
                   
-                    <h2><a href="?section=<%=sect.title%>"><%= sect.title %></a></h2>
+                    <a href="?section=<%=sect.title%>" class="section-title"><%= sect.title %></a>
                     
                     
                 </div>
@@ -22,18 +22,12 @@
           
           
             <% if params[:section] == sect.title %>
-              <h1><%= sect.title %> Threads</h1>
+              <!--<h1><%= sect.title %> Threads</h1>-->
                 
                 <% @posts.each do |post | %>
                   
-                <div class="journal">
-                
-                  <h4><%= link_to post.title, post %> </h4>
-                  <p>
-                  Published <%= time_ago_in_words(post.created_at) %> ago
-                  by
-                  <%= post.user.profile_name %>
-                  </p>
+                <div class="journal-item">
+                  <h4><%= link_to post.title, post %> <span id="published">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.profile_name %></span></h4>
                 </div>
                 
                 

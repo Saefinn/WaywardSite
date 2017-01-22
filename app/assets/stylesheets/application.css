@@ -201,11 +201,12 @@ a {
 #login-bar {
     padding: 5px 0;
     background-color: rgba(50,50,50, 0.8);
-    float: right;
+    float: left;
     font-size: 15px;
     text-align: center;
     margin-top: 5px;
-    
+    z-index: 1500;
+    position: fixed;
     
 
 }
@@ -225,6 +226,7 @@ a {
     padding: 15px 10px;
     text-decoration: none;
     color: rgb(255,255,255);
+    font-size: 12px;
 
 }
 
@@ -235,26 +237,28 @@ a {
 
 /* secondary menu - use for creating articles, events etc. */
 .secondary-menu {
-    background: rgba(0,0,0,0);
-    max-width: 50%;
-    padding: 5px 0;
-    margin:auto;
-    margin-top: 20px;
     
+    width: 60%;
+    padding: 5px 0;
+    
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 10px;
     
 }
 
 .secondary-menu a {
     margin: 10px;
     text-decoration: none;
-    color: rgb(150,150,150);
-    background-color: black;
+    color: #000;
+    font-family: 'Pirata One', Cursive;
+    font-size: 1em;
     border-bottom: solid;
     border-bottom-width: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 3px;
     margin-right: 3px;
-    font-size: 0.75em;
+    
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
@@ -264,8 +268,17 @@ a {
 
 }
 
+.menu-container {
+    width: 1200px;
+    background: rgba(255,255,255,1);
+    margin:auto;
+    position: fixed;
+    margin-top: 130px;
+}
+
 .secondary-menu a:hover {
-    color: rgba(55,55,55, 0.8);
+    color: #666;
+    background-color: #eee;
 }
 
 
@@ -289,10 +302,19 @@ a {
     overflow: hidden;
     background-color: rgba(255,255,255,0.4);
     padding: 5px;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
-
+.my-pre::first-letter {
+  font-family: 'Pirata One', Cursive;
+  font-size: 500%;
+  color: rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 4px;
+  float: left;
+}
 
 .Article a:hover {
     color: grey;
@@ -316,7 +338,7 @@ a {
 .my-pre {
     background: none;
     border: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
     white-space: pre-wrap;
 }
 
@@ -337,28 +359,93 @@ a {
     
 }
 
-.journal {
-    background-color: rgba(255,255,255, 0.1);
-    margin-bottom: 5px;
-    padding: 1%;
-    padding-top: 2px;
+.journal-item:nth-child(odd) {
+    background-color: rgba(0,0,0, 0.1);
+    
+    padding: 1px;
 }
 
+.journal-item:nth-child(even) {
+    background-color: rgba(0,0,0, 0.2);
+    padding: 1px;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-family: 'Pirata One', Cursive;
+}
+
+.journal-title {
+    font-family: 'Pirata One', Cursive;
+    font-size: 2.7em;
+}
+
+
+
+.journal-item a {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    font-family: 'Pirata One', Cursive;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.journal-item a:hover {
+    color: #666;
+}
+
+
 .journal:hover {
-    background-color: rgba(255,255,255, 0.2);
+    
 }
 
 .journal h3 a {
     text-decoration: none;
+    font-family: 'Pirata One', Cursive;
+    font-size: 1.8em;
+}
 
+.journal a {
+    color: rgb(0,0,0);
+    
+}
+
+.journal a:hover {
+    color: #666;
 }
 
 .journal h2 a {
     text-decoration: none;
     color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.1);
+    margin-bottom: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    padding-top: 2px;
+    width: 100%;
+}
+
+.journal h2 a:hover {
+    color: #666;
+    background-color: rgba(0,0,0, 0.2);
+    
 }
 
 
+
+.journal h4, .journal h4 a {
+    font-family: 'Pirata One', Cursive;
+    text-decoration: none;
+}
+
+#published {
+    font-size: 0.8em;
+    font-weight: 400;
+    float: right;
+}
 
 
 .journal img {
@@ -366,6 +453,29 @@ a {
     margin-top: 2%;
     margin-right: 1%;
 }
+
+
+
+
+.section {
+    width: 100%;
+    background-color: #bbb;
+    text-align: center;
+}
+
+.section a {
+    font-family: 'Pirata One', Cursive;
+    font-size: 2.7em;
+    text-decoration: none;
+    
+    
+}
+
+
+.section a:hover {
+    color: #666;
+}
+
 
 
 /*----------*/
@@ -389,11 +499,18 @@ a {
 
 
 .alert {
-    margin-top: 10px;
-    background-color: rgba(0,0,0,0.6);
+    
+    background-color: rgba(0,0,0,1);
     padding: 5px 0;
     border-radius: 10px;
     color: rgb(200, 200, 200);
+    position: fixed;
+    width: 50%;
+    
+    
+    margin-right: 25%;
+    margin-left: 25%;
+    
 }
 
 .alert button {
@@ -404,7 +521,7 @@ a {
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
-    font-family:Arial;
+    
     font-size:13px;
     padding:6px 10px;
     text-decoration:none;
@@ -531,10 +648,34 @@ textarea {
     
 }
 
+
+.bbcode {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.bbcode textarea {
+    background-color: white;
+}
+    
+
 .bbcode li {
     list-style: none;
     float: left;
     margin: 4px;
+    font-weight: 800;
+    
+    
+}
+
+.bbcode li a {
+    background-color: #eee;
+    padding: 3px;
+}
+
+.bbcode li a:hover {
+    color: #666;
+    background-color: #ddd;
 }
 
 
@@ -550,7 +691,7 @@ select, input{
 }
 
 select:focus {
-    background-color: black;
+    
 }
 
 
@@ -603,16 +744,21 @@ input[type="submit"]:hover{
 /* FORUMS*/
 /* ----------*/
 .thread {
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(0,0,0, 0.1);
     margin-bottom: 5px;
     padding: 1%;
     padding-top: 2px;
 }
 
+
+
+
 .thread h3 a {
     text-decoration: none;
 
 }
+
+
 
 
 
@@ -675,7 +821,13 @@ margin-top: 10px;
     width: 900px;
     background-color: white;
     margin: auto;
+    margin-bottom: 50px;
+    
 }
+
+
+
+
 
 
 
@@ -771,9 +923,12 @@ margin-top: 10px;
 }
  
 #links::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: rgba(255,255,255, .0);
   outline: 1px solid slategrey;
 }
+
+
+
 
 
 
@@ -805,6 +960,15 @@ margin-top: 10px;
 }
 
 
+#arrow {
+    
+    font-weight: 800;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+
+
 
 
 .page-body {
@@ -823,6 +987,18 @@ margin-top: 10px;
 
 /* #####################
 /* LOGO - TOP OF PAGE */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 1400px;
+  margin: auto;
+  
+}
+
+.page-body {
+    display: none;
+}
+
 
 #logo {
   
@@ -864,6 +1040,141 @@ margin-top: 10px;
 }
 
 
+
+
+.letter::first-letter {
+  font-family: 'Pirata One', Cursive;
+  font-size: 500%;
+  color: #fff;
+  background-color: #000;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 4px;
+  float: left;
+  
+  
+}
+
+iframe {
+  width: 100%;
+  height: 700px;
+}
+
+.letter {
+  white-space: pre-wrap;
+}
+
+.highlight {
+  color: red;
+  
+  
+}
+
+
+
+.closeX {
+  font-family: 'Pirata One', Cursive;
+  font-size: 2.5em;
+  color: black;
+  text-decoration: none;
+  
+  position: fixed;
+  margin-left: 5px;
+  margin-right: 1225px;
+  margin-top: 5px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-style: solid;
+  
+  
+}
+
+.closeX:hover {
+  color: red;
+}
+
+.content h2 {
+  font-family: 'Pirata One', Cursive;
+  text-align: center;
+  font-size: 4em;
+}
+
+
+.content h3 {
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Pirata One', Cursive;
+  margin-bottom: 0px;
+}
+
+.content h4 {
+  font-size: 1.5em;
+  margin-top: 0px;
+  text-align: center;
+  margin-right: 50px;
+}
+
+.content p {
+  margin-left: 20px;
+}
+
+.pop-out {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0,0,0,0.8);
+  
+  overflow: scroll;
+  margin: auto;
+  z-index: 2000;
+  
+}
+
+
+.popout-block {
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 15px;
+  height: 700px;
+  overflow: scroll;
+}
+
+.pop-out img{
+  float: right;
+  width: 350px;
+  
+  border-radius: 10px;
+}
+
+.pop-out h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pop-out p, .pop-out li {
+  margin-bottom: 15px;
+}
+
+.pop-out h3{
+  font-family: 'Pirata One', Cursive;
+  font-size: 4.5em;
+  text-align: center;
+}
+
+.pop-out h4{
+  font-family: 'Pirata One', Cursive;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 0px;
+}
 
 
 

@@ -2,14 +2,14 @@
 
 <h1>Latest News</h1>
 
-<div class="Article">
+<div class="journal">
 <% @news.each do |news| %>
     <%= time_ago_in_words(news.created_at) %> ago
-    <h2><%= link_to news.Title, news %> <!--<strong><%= link_to 'X', news, method: :delete, data: { confirm: 'Are you sure you want to delete this article?' } %></strong>--></h2>
+    <h3><%= link_to news.Title, news %> <!--<strong><%= link_to 'X', news, method: :delete, data: { confirm: 'Are you sure you want to delete this article?' } %></strong>--></h3>
     
-    <p class="my-pre"><%= news.Content.bbcode_to_html.html_safe%></p>
+    <!--<p class="my-pre"><%= news.Content.bbcode_to_html.html_safe%></p>-->
         
-    <p><%= link_to 'Read More', news %></p>
+    <!--<p><%= link_to 'Read More', news %></p>-->
     <hr>
 <% end %>
 </div>

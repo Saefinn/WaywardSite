@@ -9,15 +9,15 @@
 <% @statuses.each do |status| %>
 <div class="journal">
 
-  <%= image_tag status.user.gravatar_url %>
+  <!--<%= image_tag status.user.gravatar_url %>-->
 
     
   
   <!-- Display the journal title name -->
   
-  <strong><h3><%= link_to status.title, "journal/#{status.id}" %></h3></strong>
+  <strong><h4 class="journal-title"><%= link_to status.title, "journal/#{status.id}" %></h4></strong>
 
-  <p class="text-summary"><%=status.content.bbcode_to_html.html_safe%></p>
+  <!--<p class="text-summary"><%=status.content.bbcode_to_html.html_safe%></p>-->
   <!-- Display the author name -->
   <a href=<%=status.user.profile_name %>> By <%= status.user.profile_name %></a>
   

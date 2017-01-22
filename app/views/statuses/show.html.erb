@@ -1,7 +1,7 @@
 <!-- This page is to 'show' a post -->
-<p id="notice"><%= notice %></p>
+<!--<p id="notice"><%= notice %></p>
 
-<p>
+<p>-->
   <!-- Show the user name of the post maker. -->
   
   
@@ -9,7 +9,7 @@
 
 <p>
   <!-- Show the post itself -->
-  <h3><%= @status.title %></h3>
+  <h1><%= @status.title %></h1>
   <h4>By <%= @status.user.profile_name %></h4>
   <div class="my-pre"><%= @status.content.bbcode_to_html.html_safe %></div>
 </p>

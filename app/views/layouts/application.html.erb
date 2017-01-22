@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Pirata+One" rel="stylesheet">
   <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -19,48 +19,47 @@
     <div id="logo"><h1><%= link_to "Pirates of a Wayward Star", root_path %></h1>
       <h3>A RolePlaying Free Company</h3>
     </div>    
+      <div id="login-bar">
+      <% if user_signed_in? %>
+          <li><%= link_to current_user.profile_name, edit_user_registration_path %></li>
+          <li><%= link_to "Log Out", logout_path %> </li>
+      <% else %>
+          <li><%= link_to "Register", register_path %></li>
+          <li><%= link_to "Log in", login_path %></li>
+      <% end %>
+    </div>
 
-<div id="login-bar">
-  <% if user_signed_in? %>
-      <li><%= link_to current_user.profile_name, edit_user_registration_path %></li>
-      <li><%= link_to "Log Out", logout_path %> </li>
-  <% else %>
-      <li><%= link_to "Register", register_path %></li>
-      <li><%= link_to "Log in", login_path %></li>
-  <% end %>
-</div>
 
 <br/>
 
 <div id="navigation">
+
     <img src="http://i.imgur.com/GbPn1Oq.png"></img>
     <div id="links">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "News", news_index_path %></li>
         <li><%= link_to "Battle System", rules_path %></li>
-        <li><%= link_to "Members", user_list_path %></li>
+        <!--<li><%= link_to "Members", user_list_path %></li>-->
         <li><%= link_to "The Crew", characters_path %></li>
         <li><%= link_to "Journals",feed_path %></li>
-        <li><%= link_to "Items", items_path %></li>
+        <!--<li><%= link_to "Items", items_path %></li>-->
         <li id="events"><%= link_to "Events", events_path %></li>
         <li><%= link_to "Forum", posts_path %></li>
 
     </div>
+    <!--<a id="arrow">⇓</a>-->
 </div>
 
 
 
 <% if current_user.present? %>
 
-
+<div class="menu-container">
   <div class="secondary-menu">
-    <div class="second-inner">
-      <div class="container">
-        <%= link_to "New Character", new_character_path %> <%= link_to "New Journal Entry", journal_new_path %> <%= link_to 'New Item', new_item_path %> <%= link_to "New Event", new_event_path %> <%= link_to "New Post", new_post_path() %> <%= link_to 'New News Article', new_news_path %>
-      </div>
-
-    </div>
+       
+        <!--<%= link_to "New Character", new_character_path %>--> <%= link_to "New Journal Entry", journal_new_path %> <!--<%= link_to 'New Item', new_item_path %>--> <%= link_to "New Event", new_event_path %> <%= link_to "New Post", new_post_path() %> <%= link_to 'New News Article', new_news_path %>
   </div>
+</div>
 <% end %>
 
 
@@ -83,6 +82,10 @@
 </div>
 
 </body>
+
+<footer>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
+</footer>
 
 
 </html>
