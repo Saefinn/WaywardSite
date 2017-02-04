@@ -8,7 +8,7 @@ $(document).ready(function(){
   //$("#crew").hide();
   $(".pop-out").hide();
   $(".page-body").fadeIn(350);
-  $("#saefinn").show();
+  
   
 });
 
