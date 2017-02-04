@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   get 'profiles/show'
   get 'pages/index'
   get 'pages/about'
+  get 'pages/story'
 
   #Map routes for "devise"
   devise_for :users
@@ -37,6 +38,7 @@ Rails.application.routes.draw do
   root to: 'pages#about'
   get 'rules', to: 'pages#index', as: :rules
   get 'about', to: 'pages#about', as: :about
+  get 'story', to: 'pages#story', as: :story
 
   get 'journal', to: 'statuses#index', as: :journal
   get 'journal/:id/edit', to: 'statuses#edit', as: :journal_edit
