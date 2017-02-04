@@ -10,5 +10,7 @@
 </p>
 <p>Created by <%= @event.user.profile_name%></p>
 
+<div class="editbox">
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+</div>

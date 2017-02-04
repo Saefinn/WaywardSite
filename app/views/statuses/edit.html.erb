@@ -1,6 +1,7 @@
 <h1>Editing Journal Entry</h1>
 <!-- Render the form for editing the status -->
 <%= render 'form' %>
-
+<div class="editbox">
 <%= link_to 'Show', "../#{@status.id}" %> |
 <%= link_to 'Back', journal_path %>
+</div>

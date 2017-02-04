@@ -27,7 +27,7 @@
                 <% @posts.each do |post | %>
                   
                 <div class="journal-item">
-                  <h4><%= link_to post.title, post %> <span id="published">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.profile_name %></span></h4>
+                  <h4><%= link_to post.title, post %> <span class="published">Published <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.profile_name %></span></h4>
                 </div>
                 
                 

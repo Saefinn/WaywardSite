@@ -107,7 +107,7 @@
   </ul>
 </section>
 
-<div class="bottom">
+<div class="editbox">
     <% if current_user.present? %>
         <% if @character.user.profile_name == current_user.profile_name %>
             <%= link_to 'Edit', edit_character_path(@character) %> |

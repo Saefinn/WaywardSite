@@ -58,8 +58,14 @@ mySettings = {
    ]
 }
 $(document).on('page:change', function() {
-   $("textarea").markItUp(mySettings);
+   //$("textarea").markItUp(mySettings);
 });
+
+$(document).ready(function() {
+   $("textarea").markItUp(mySettings); 
+});
+
+
 
 
 
