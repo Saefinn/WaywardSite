@@ -327,6 +327,10 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
+.my-pre img {
+    max-width: 700px;
+}
+
 .my-pre::first-letter {
   font-family: 'Pirata One', Cursive;
   font-size: 500%;
